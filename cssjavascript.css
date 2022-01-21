@@ -1,0 +1,292 @@
+<style>
+.section{
+    margin:0 ;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.slider{
+     width: 1900px;
+     height: 720px;
+     border-radius: 10px;
+     overflow: hidden;
+}
+.slide{
+    width: 500%;
+    height: 800px;
+    display: flex;
+}
+.slide input{
+display: none;
+    }
+.st{
+        width: 20%;
+        transition: 2s;
+    }
+.st img{
+        width: 1900px;
+        height: 720px;
+    }
+.nav-m{
+    position: absolute;
+    width: 1900px;
+    margin-top: -80px;
+    justify-content: center;
+    display: flex;
+}
+.m-btn{
+border: 2px solid #43df34;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+position: relative;
+}
+.m-btn:not(:last-child){
+margin-right: 30px;
+    }
+.m-btn:hover{
+background-color: turquoise;
+}
+#radio1:checked ~ .first{
+margin-left: 20%;
+}
+#radio2:checked ~ .first{
+margin-left: 0%;
+}
+#radio3:checked ~ .first{
+margin-left: -20%;
+}
+#radio4:checked ~ .first{
+margin-left: -40%;
+}
+#radio4:checked ~ .first{
+margin-left: 20%;
+}
+.nav-auto{
+position: absolute;
+width: 1900px;
+margin-top: 460px;
+display: flex;
+justify-content: center;
+}
+.nav-auto div{
+border: 2px solid #43df34;
+padding: 5px;
+border-radius: 10px;
+transition: 1s;
+}
+.nav-auto div:not(:last-child){
+margin-right: 30px;
+justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+background-color: aquamarine;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+background-color: aquamarine;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+background-color: aquamarine;
+}
+#radio4:checked ~ .nav-auto .a-b4{
+background-color: aquamarine;
+}
+#radio4:checked ~ .nav-auto .a-b5{
+background-color: aquamarine;
+}       
+</style>
+<script type="text/javascript">
+var counter=1;
+setInterval(function(){ 
+    document.getElementById?('radio' + counter).checked=true:
+    counter++;
+    if(counter >4){
+        counter=1;
+    }
+},5000
+)
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    
+* {
+  box-sizing: border-box;
+}
+img {
+            width: 300px;
+            border-radius: 0px;
+            margin: auto;
+            height: auto;
+            align-content: center;
+}
+#navbar{
+        width: 100%;
+      
+        }
+        nav li {
+            display:inline-block;
+            margin-right: 20px;
+            position: relative;
+            align-content: center;
+            font-size: 30px;
+            font-weight: 50px;
+        }
+        nav ul{
+            padding: 5px 0px 5px 30px;
+        }
+        nav a:hover{
+            color: red;
+        }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+          var btnText1 = document.getElementById("myBtn1");
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+
+
+
+
+        <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  border-bottom: 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+p{
+    line-height: 30px;
+}
+#more{
+    display: none;
+}
+nav li {
+            display:inline-block;
+            margin-right: 20px;
+            position: relative;
+            align-content: center;
+        }
+        nav ul{
+            padding: 5px 0px 5px 30px;
+        }
+        nav a:hover{
+            color: red;
+        }
+        div {
+            margin: auto;
+        }
+</style>

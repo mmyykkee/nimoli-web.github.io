@@ -1,0 +1,214 @@
+*{
+  margin: 10px;
+  padding: 2px;
+  font-size: large;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background:turquoise;
+  width: 100%;
+  }
+.slideshow{
+  top: 10%;
+  width: 500px;
+  height: 50%;
+  overflow: hidden;
+}
+.middle{
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50px);
+  overflow: hidden;
+
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 5px;
+  height: 5px;
+  border: 0.1px solid #0fff;
+  margin: 6px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+/* affects the home page images */
+.slides{
+  width: 500%;
+  height: 60%;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide{
+  width: 20%;
+  transition: 0s;
+  overflow: hidden;
+}
+
+.slide img{
+  width: 50%;
+  height: 100%;
+}
+/*how images are spaced from one another*/
+#r1:checked ~ .s1{
+  margin-left: 5%;  
+}
+#r2:checked ~ .s1{
+  margin-left: -15.5%;  
+}
+#r3:checked ~ .s1{
+  margin-left: -36%;  
+}
+#r4:checked ~ .s1{
+  margin-left: -56%;  
+}
+#r5:checked ~ .s1{
+  margin-left: -76.5%;  
+}
+
+#navbar{
+  width: 100%;
+
+  }
+  nav li {
+      display:inline-block;
+      padding-left: 0px;
+      margin-left: 40px;
+      font-size: large;
+      font-weight: bolder;
+      color: white;
+     
+  }
+  nav ul{
+      padding: 2px 0px 0px 30px;
+      background-color: royalblue;
+      height: 50px;
+  }
+  nav a:hover{
+      color: #fff;
+  }
+  .font-style{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #333;
+}
+#bbg{
+   background-color: darkslategray;
+   height: auto;
+   background-size: 1600px 1400px;
+   background: white;
+   background-image: url();
+}
+button{
+  color: brown;
+}
+
+#more{
+  display: none;
+}
+#more2{
+  display: none;
+}
+
+img{
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+h1{
+  font-size: 60px;
+  text-align: center;
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+h4{
+  font-size: larger;
+}
+p{
+  line-height: 35px;
+  height: auto;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  border-bottom: 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  border-radius: 10px;
+  /*changes the height of the card*/
+  height: 500px;
+  margin: 10px;
+  background-image: url();
+  margin-top: auto;
+  display: flexbox;
+  align-self: normal;
+  flex-wrap: wrap;
+  flex-direction: column;
+ 
+}
+.container{
+  position: relative;
+  width: 1400px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container:hover{
+ 
+  transform: scale(1.0);
+  
+
+}
+.card:hover{
+  transform: scale(1.05);
+  filter: blur(0px);
+  box-shadow: 1px 1px 1px 10px rgba(74, 165, 82, 0.2);
+}
+.container .card:hover{
+  transform: scale(1.05);
+
+}
+
+
