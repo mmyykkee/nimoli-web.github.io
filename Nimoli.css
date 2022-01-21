@@ -176,7 +176,7 @@ p{
   overflow: hidden;
   border-radius: 10px;
   /*changes the height of the card*/
-  height: 500px;
+  height: auto;
   margin: 10px;
   background-image: url();
   margin-top: auto;
