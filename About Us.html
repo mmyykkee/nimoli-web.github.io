@@ -4,19 +4,19 @@
     <title>About Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
      <link rel="stylesheet" href="Nimoli.css">
-    <img src="Images/logo2.png" alt="" style="width: 500px; height: 150px;">
-<nav>
-    <ul>
-<li> <a href="index.html">Home</li> </a> 
-<li> <a href="Our Partners.html" target=""> Our Partners </a></li>
-<li> <a href="Gallery.html"target="">Gallery</a> </li></a> 
-<li> <a href="Careers.html" target=""> Careers </li> </a>
-<li> <a href="Our Services.html"target=""> Our Services</li></a>
-<li> <a href="Branches.html" target=""> Branches </li> </a>
-<li> <a href="contacts.html"target=""> Contact Us </li> </a>
-<li> <a href="About Us.html" target=""> About Us </li></a>
-</ul>
-</nav>
+     <nav id="navbar">
+        <img src="Images/logo2.png" class="company-logo">
+            <ul id="menu">
+        <li> <a href="NIMOLI MEDICAL SERVICES.html">Home</li> </a> 
+        <li> <a href="Our Partners.html" target=""> Our Partners </a></li>
+        <li> <a href="Gallery.html"target="">Gallery</a> </li></a> 
+        <li> <a href="Careers.html" target=""> Careers </li> </a>
+        <li> <a href="Our Services.html"target=""> Our Services</li></a>
+        <li> <a href="Branches.html" target=""> Branches </li> </a>
+        <li> <a href="contacts.html"target=""> Contact Us </li> </a>
+        <li> <a href="About Us.html" target=""> About Us </li></a>
+    </ul>
+    </nav>
 </header>
    <p style="line-height: 50px;"> Nimoli Medicals Services Limited is registered in Kenya under the <strong> Act 486 </strong>and its offices are domiciled in Kenya.
 Nimoli is registered to carry on the business of running Health Clinics. Hospital, Medical Laboratories and Public Health utilities with all Medicines and Medical Equipments. To carry out Research and Development and to enter into partnership with Institutions/Organizations whether Governmental or Non Governmental in the field of Artificial Organs and regenerative Medical Care and to deal and distribute market specialized Medical Care Devices.
@@ -25,5 +25,35 @@ It has a Licence to operate as a Private Medical Institution under Medical and P
 Nimoli has branches located in Kasarani and Tassia (Near to Tassia Hill Academy) Nairobi. 
 
 </p>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var navbar =document.getElementById("navbar")
+            var menu =document.getElementById("menu")
+
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>
