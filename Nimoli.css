@@ -297,13 +297,13 @@ button:hover{
   top: 500px;
 }
 
-nav .sticky{
+nav .stiky{
   padding: 5px 100px;
   background: #fff;
   position: fixed;
   
 }
-.sticky{
+.stiky{
   position: fixed;
   top: -10px;
   left: 0;
@@ -314,7 +314,7 @@ nav .sticky{
   background: whitesmoke;
   overflow: hidden;
  }
-.sticky .company-logo{
+.stiky .company-logo{
   width: 15%;
   padding-left: 0;
   margin-left: 0;
