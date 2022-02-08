@@ -9,6 +9,7 @@ body{
   padding: 0;
   background:turquoise;
   width: 100%;
+  transition: (padding-top .5s ease);
   }
 
 .menu-icon{
@@ -141,6 +142,7 @@ p{
   height: 10%;
   margin-top: -30px;
   padding-bottom: -10px;
+  transition: all 0.4s ease;
 }
 
 .column {
@@ -187,6 +189,7 @@ p{
     right: 0;
     z-index: 2;
     min-height: 50px;
+    transition: all 0.4s ease;
        }
   nav ul li{
    position: relative;
@@ -194,6 +197,9 @@ p{
    margin-bottom: 10px;
    display: inline-block;
    margin: 1px;
+  }
+  nav ul li a{
+    text-decoration: none;
   }
   #menu{
       overflow: hidden;
@@ -225,7 +231,7 @@ section .card .image img{
   display: flex;
   }
 
-  .swiper-pagination{
+.swiper-pagination{
     visibility: hidden;
   }
 section .card .image{
@@ -234,22 +240,20 @@ section .card .image{
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
+  padding: auto;
+  text-align: left;
   background-color: #f1f1f1;
   overflow: hidden;
   border-radius: 10px;
   /*changes the height of the card*/
   height: 500px;
-  margin: 10px;
+  margin: 1px;
   background-image: url();
   margin-top: auto;
   display: flexbox;
   align-self: normal;
   flex-wrap: wrap;
   flex-direction: column;
-  
- 
 }
 .container{
   position: absolute;
@@ -297,10 +301,12 @@ nav .sticky{
   padding: 5px 100px;
   background: #fff;
   position: fixed;
+  transition: all 4s ease;
   
 }
 .sticky{
   position: fixed;
+  transition: ease;
   top: -10px;
   left: 0;
   padding: 0px ;
@@ -316,6 +322,7 @@ nav .sticky{
   padding-left: 0;
   margin-left: 0;
   margin-top: 0;
+  transition: all 0.4s ease;
 }
 
 .fa-fa-map-marker{
@@ -335,6 +342,12 @@ nav .sticky{
  position: absolute;
  float: left;
  transform: rotatex(90deg);
+}
+.partnerpics{
+  text-align: left;
+}
+h3{
+  text-align: center;
 }
 .contactsec{
   width: 100%;
@@ -372,7 +385,7 @@ width: 50%;
   width: 100vw;
   margin: 0;
   padding: 0;
-  background:  #ffff;
+  background:  #fff;
   display: grid ;
   place-items: center
 }
@@ -381,8 +394,8 @@ width: 50%;
   height: 600px;
   width: 10000px;
   max-width: 1350px;
-  background:  #ffff;
-  box-shadow: 5px 5px 8px  #ffff;
+  background:  #fff;
+  box-shadow: 5px 5px 8px  rgb(240, 233, 233);
   position: relative;
   overflow: hidden;
   padding: 20px;
