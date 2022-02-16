@@ -4,6 +4,9 @@
   font-size: large;
   box-sizing: border-box;
 }
+#navbar ul li a{
+  text-decoration: none;
+}
 body{
   margin: 0;
   padding: 0;
@@ -392,6 +395,7 @@ width: 50%;
   padding: 5px;
  }
 #containers {
+  align-items: center;
   height: 100vh;
   width: 100vw;
   margin: 0;
