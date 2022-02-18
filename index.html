@@ -183,6 +183,20 @@
             <i class="fas fa-quote-left" style="font-size:24px; color: white; float: left;"></i>
         </div>
         <P style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis fugit, sit soluta voluptate culpa fuga quidem odio laudantium et suscipit. Sequi nisi tenetur, provident amet deserunt commodi quam assumenda! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam facilis sequi? Repellendus autem voluptatem voluptates eligendi dolorum labore temporibus perspiciatis possimus quibusdam deserunt quasi tenetur, fugiat nesciunt dignissimos consequatur.</P>
+
+        <img src="images/director.png" alt="director" class="left-align" style="border-radius: 50%; width: 100px; height: 100px; text-align: left; float: left;">
+        <p style="color: white; text-align: left; left: 0; font-family: 'Times New Roman', Times, serif;">Managing Director's Words</p>
+        <div class="quotes">
+            <i class="fas fa-quote-left" style="font-size:24px; color: white; float: left;"></i>
+        </div>
+        <P style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis fugit, sit soluta voluptate culpa fuga quidem odio laudantium et suscipit. Sequi nisi tenetur, provident amet deserunt commodi quam assumenda! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam facilis sequi? Repellendus autem voluptatem voluptates eligendi dolorum labore temporibus perspiciatis possimus quibusdam deserunt quasi tenetur, fugiat nesciunt dignissimos consequatur.</P>
+
+        <img src="images/director.png" alt="director" class="left-align" style="border-radius: 50%; width: 100px; height: 100px; text-align: left; float: left;">
+        <p style="color: white; text-align: left; left: 0; font-family: 'Times New Roman', Times, serif;">Administrator's words</p>
+        <div class="quotes">
+            <i class="fas fa-quote-left" style="font-size:24px; color: white; float: left;"></i>
+        </div>
+        <P style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis fugit, sit soluta voluptate culpa fuga quidem odio laudantium et suscipit. Sequi nisi tenetur, provident amet deserunt commodi quam assumenda! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam facilis sequi? Repellendus autem voluptatem voluptates eligendi dolorum labore temporibus perspiciatis possimus quibusdam deserunt quasi tenetur, fugiat nesciunt dignissimos consequatur.</P>
             </div>
 
         <br>
@@ -240,17 +254,20 @@
     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript">
-        var navbar =document.getElementById("navbar")
-            var menu =document.getElementById("menu")
+        window.addEventListener("scroll", function(){
+    var header = document.querySelector("#navbar");
+    header.classList.toggle('sticky',window.scrollY > 0);
+        //var navbar =document.getElementById("navbar")
+         //   var menu =document.getElementById("menu")
 
-            window.onscroll = function(){
-                if(window.pageYOffset >= menu.offsetTop){
-                    navbar.classList.add("sticky");
-            }
-            else{
-                navbar.classList.remove("sticky");
-            }
-        }
+          //  window.onscroll = function(){
+          //      if(window.pageYOffset >= menu.offsetTop){
+          //          navbar.classList.add("sticky");
+          //  }
+          //  else{
+          //      navbar.classList.remove("sticky");
+          //  }
+        });
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,

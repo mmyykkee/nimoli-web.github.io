@@ -36,17 +36,17 @@
   <li> <a href="About Us.html" target=""> About Us </li></a>
 </ul>
 </nav>
-        <h3>Our Partners</h3>
-      <p>As Nimoli Medical Services, we have partnered with the following insuarances to help our clients pay for the services they have received in our facility.</p> 
+        <h1>Our Partners</h1>
+      <p>As Nimoli Medical Services, we have partnered with the following insurances to help our clients pay for the services they have received in our facility.</p> 
 
 <div class="containers">
   <div class="column">
     <div class="card">
-      <h3>National Insuarance Health Fund</h3>
+      <h3>National Insurance Health Fund</h3>
       <img src="Images/nhif.png" class="partnerpics" style="width: 300px; height: 200px; padding-left: -10px;">
       <p> <em>NHIF CODE:</em> </p>
       <ul>
-          <li>Nimoli Medical Services (Kasarani) 80008016</li>
+          <li>Nimoli Medical Services (Kasarani) 80008018</li>
               
             <li>Nimoli Medical Services Limited (Tassia) 80002226</li>
                  
@@ -96,17 +96,20 @@
   </div>
   </div> 
   <script type="text/javascript">
-    var navbar =document.getElementById("navbar")
-        var menu =document.getElementById("menu")
+    window.addEventListener("scroll", function(){
+    var header = document.querySelector("#navbar");
+    header.classList.toggle('sticky',window.scrollY > 0);
+        //var navbar =document.getElementById("navbar")
+         //   var menu =document.getElementById("menu")
 
-        window.onscroll = function(){
-            if(window.pageYOffset >= menu.offsetTop){
-                navbar.classList.add("sticky");
-        }
-        else{
-            navbar.classList.remove("sticky");
-        }
-    }
+          //  window.onscroll = function(){
+          //      if(window.pageYOffset >= menu.offsetTop){
+          //          navbar.classList.add("sticky");
+          //  }
+          //  else{
+          //      navbar.classList.remove("sticky");
+          //  }
+        });
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,

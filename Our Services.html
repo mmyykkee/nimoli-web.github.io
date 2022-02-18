@@ -22,7 +22,7 @@
       </nav>
 </header>
 
-<div class="container">
+<div class="containers">
   <div class="column">
     <div class="card">
       <h3>Immunization</h3>
@@ -59,14 +59,14 @@
     <div class="card">
       <h3>Laboratory</h3>
       <img src="Images/Lab tech.jpg" alt="">
-      <p>Our Laboratories has been equiped with modern machines and instruments that help us to accurately detect what could be ailing you. At a cheap price, you will receive numerous lab tests and referrals to specialized facilities to meet your needs</p>
+      <p>Our Laboratories has been equipped with modern machines and instruments that help us to accurately detect what could be ailing you. At a cheap price, you will receive numerous lab tests and referrals to specialized facilities to meet your needs</p>
     </div>
   </div>
    <div class="column">
     <div class="card">
       <h3>Ultra-Sound</h3>
       <img src="Images/Ultrasound_Terese Winslow.jpg" alt="">
-      <p>For women aspiring to become mothers, an Ultra-Sound atleat twice during the geatation period is always essential to detect the well being of the young being in the womb. At our facility, we have Ultra-Sound serviices for all the mothers awaiting their new borns. With a little charge or with insuarances such as <strong> Mom Care</strong> you will receive your images within a few minutes</p>
+      <p>For women aspiring to become mothers, an Ultra-Sound atleast twice during the gestation period is always essential to detect the well being of the young being in the womb. At our facility, we have Ultra-Sound serviices for all the mothers awaiting their new borns. With a little charge or with insuarances such as <strong> Mom Care</strong> you will receive your images within a few minutes</p>
     </div>
   </div>
   <div class="column">
@@ -75,7 +75,7 @@
       <img src="Images/200410_dental_chair_lg.jpg" alt=""> 
       <p>At one of our facilities, dental services are offered at subsidized prices including all the basic services such as:
           <ol>
-              <li>Scalling</li>
+              <li>Scaling</li>
               <li>Uprooting</li>
               <li>Refilling</li>
               <li>Root canal</li>
@@ -87,17 +87,20 @@
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript">
-        var navbar =document.getElementById("navbar")
-            var menu =document.getElementById("menu")
+         window.addEventListener("scroll", function(){
+    var header = document.querySelector("#navbar");
+    header.classList.toggle('sticky',window.scrollY > 0);
+        //var navbar =document.getElementById("navbar")
+         //   var menu =document.getElementById("menu")
 
-            window.onscroll = function(){
-                if(window.pageYOffset >= menu.offsetTop){
-                    navbar.classList.add("sticky");
-            }
-            else{
-                navbar.classList.remove("sticky");
-            }
-        }
+          //  window.onscroll = function(){
+          //      if(window.pageYOffset >= menu.offsetTop){
+          //          navbar.classList.add("sticky");
+          //  }
+          //  else{
+          //      navbar.classList.remove("sticky");
+          //  }
+        });
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,

@@ -250,20 +250,20 @@ section .card .image{
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: auto;
+  padding: 5px;
   text-align: left;
   background-color: #f1f1f1;
   overflow: hidden;
   border-radius: 10px;
   /*changes the height of the card*/
-  min-height: 500px;
+  min-height: 520px;
   min-width: 300px;
-  margin: 1px;
+  margin: 2px;
   background-image: url();
   background-size: cover;
   margin-top: auto;
   align-self: normal;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
 }
 .container{
