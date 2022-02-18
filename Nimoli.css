@@ -95,7 +95,7 @@ input[name="r"]{
      
   }
   nav ul{
-      padding: 2px 0px 0px 30px;
+      padding: 2px 0px 0px 20px;
       background-color: royalblue;
       height: 50px;
   }
@@ -304,11 +304,14 @@ button:hover{
 }
 
 nav .sticky{
-  padding: 5px 100px;
+  padding: 3px 90px;
   background: #fff;
   position: fixed;
   transition: all 4s ease;
-  
+  width: 90%;
+  }
+nav .sticky a{
+  background-color: #00f;
 }
 .sticky{
   position: fixed;
@@ -505,10 +508,31 @@ width: 50%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   }
-  
-  .div1 { grid-area: 1 / 1 / 2 / 2; }
-  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .holder {
+    display:flex;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
 
+  .div1 {
+     grid-area: 1 / 1 / 2 / 2; 
+    }
+  .div2 { 
+    grid-area: 1 / 2 / 2 / 3;
+   }
+  .div3 { 
+    grid-area: 1 / 1 / 4 / 4;
+    height: fit-content;
+   }
+  .div4 { 
+    grid-area: 2 / 4 / 2 / 3;
+   }
+   .div3 .company-logo{
+     height: 100px;
+     width: 200px;
+   }
   .noHover{
     pointer-events: none;
 }
