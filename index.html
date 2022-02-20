@@ -226,14 +226,97 @@
 
 
 
+        <div class="outerdiv">
+            <div class="innerdiv">
+              <!-- div1 -->
+              <div class="div11 eachdiv">
+                <div class="userdetails">
+                  <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
+                  </div>
+                  <div class="detbox">
+                    <p class="name">Daniel Clifford</p>
+                    <p class="designation">Verified Graduate</p>
+                  </div>
+                </div>
+                <div class="review">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia et odio quas laudantium veniam quisquam molestias, eum dolorem accusantium excepturi eaque corrupti. Sed esse velit cupiditate vero libero aliquid?</p>
+                </div>
+              </div>
+              <!-- div2 -->
+              <div class="div22 eachdiv">
+                <div class="userdetails">
+                  <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt="">
+                  </div>
+                  <div class="detbox">
+                    <p class="name">Jonathan Walters</p>
+                    <p class="designation">Verified Graduate</p>
+                  </div>
+                </div>
+                <div class="review">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum dolor et aliquid nemo qui quo odit iste dolorem similique voluptatum sit corporis quibusdam necessitatibus fugiat officiis, quae, nostrum adipisci.</p>
+                </div>
+              </div>
+              <!-- div3 -->
+              <div class="div33 eachdiv">
+                <div class="userdetails">
+                  <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
+                  </div>
+                  <div class="detbox">
+                    <p class="name dark">Kira Whittle</p>
+                    <p class="designation dark">Verified Graduate</p>
+                  </div>
+                </div>
+                <div class="review dark">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, saepe. Id ea sed perspiciatis tenetur odit ex laudantium, quo, asperiores quisquam perferendis impedit eligendi, explicabo architecto ipsa excepturi vitae modi.</p>
+                </div>
+              </div>
+              <!-- div4 -->
+              <div class="div44 eachdiv">
+                <div class="userdetails">
+                  <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt="">
+                  </div>
+                  <div class="detbox">
+                    <p class="name dark">Jeanette Harmon</p>
+                    <p class="designation dark">Verified Graduate</p>
+                  </div>
+                </div>
+                <div class="review dark">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur beatae reprehenderit suscipit? Vel, dolorem eius. Enim, asperiores eos ab, illum id, debitis est culpa beatae officiis cum necessitatibus qui nemo?</p>
+                </div>
+              </div>
+              <!-- div5 -->
+              <div class="div55 eachdiv">
+                <div class="userdetails">
+                  <div class="imgbox">
+                    <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg" alt="">
+                  </div>
+                  <div class="detbox">
+                    <p class="name">Patrick Abrams</p>
+                    <p class="designation">Verified Graduate</p>
+                  </div>
+                </div>
+                <div class="review">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, nemo autem. Facilis harum quo voluptas temporibus et id voluptates, adipisci, unde consectetur voluptatibus laborum nisi eligendi qui ut necessitatibus? Quaerat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="attribution">
+            Developed by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Maina Michael</a><br>
+            Coded by <a href="https://www.instagram.com/developer_sah/" target="_blank">Maina Michael</a>.
+          </div>
 
 
 
 
 
 
-
-
+       
+    
 
 
 
@@ -253,7 +336,7 @@
             </div>
     
     
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
     var header = document.querySelector("#navbar");
@@ -269,6 +352,40 @@
           //      navbar.classList.remove("sticky");
           //  }
         });
+
+
+
+
+
+
+        $('.owl-carousel').owlCarousel({
+    loop:false,
+  stagePadding: 15,
+    margin:10,
+    nav:true,
+  navText : ['<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>','<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>'],
+    responsive:{
+        0:{
+            items:1
+        },
+        640:{
+            items:2
+        },
+      960:{
+            items:3
+        },
+        1200:{
+            items:4
+        }
+    }
+});
+
+
+
+
+
+
+
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
