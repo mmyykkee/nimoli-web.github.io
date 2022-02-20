@@ -31,7 +31,12 @@
                 </div>
                
         </div>
-            <ul id="menu">
+            <div id="menu">
+
+                <div class="btn">
+                    <i class="fas fa-times close-btn"></i>
+                </div>
+                <ul>
             <li> <a href="index.html">Home</li> </a> 
             <li> <a href="Our Partners.html" target=""> Our Partners </a></li>
             <li> <a href="Gallery.html"target="">Gallery</a> </li></a> 
@@ -41,10 +46,13 @@
             <li> <a href="contacts.html"target=""> Contact Us </li> </a>
             <li> <a href="About Us.html" target=""> About Us </li></a>
         </ul>
-        </nav>
-    </header>
-        <img src="Images/list.png" class="menu-icon" onclick="togglemenu()">
+            </div>
         
+        </nav>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn" onclick="togglemenu()"></i>
+        </div>
+    </header>        
 <body>
     
         <div class="parent">
@@ -187,7 +195,7 @@
         <h2>Our Vision</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit sunt hic impedit adipisci iure amet consequuntur dolorum aliquam aperiam nostrum, ullam minima est doloribus quae, obcaecati quod harum magnam?</p>
         <h2>Our Pledge</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ex ab atque iure quas, nisi dignissimos tempora voluptate ullam. Quos doloribus nam excepturi laudantium tenetur, corrupti voluptas enim repellat aperiam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ex ab atque iure quas, nisi dignissimos tempora voluptate ullam. Quos doloribus nam excepturi laudantium tenetur, corrupti voluptas enim repellat aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem earum aperiam sed debitis, doloribus facilis, ex saepe id quibusdam magni tempore unde. Labore quibusdam laboriosam eos omnis cupiditate? Dignissimos, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laudantium corrupti labore quaerat, veritatis eaque ullam eius harum consectetur? Velit, nostrum reprehenderit in alias est assumenda vero voluptate ad? Nam.</p>
     </div>
     
 </div>
@@ -218,15 +226,7 @@
         <br>
        
         <P style="font-weight: bolder; text-align: center; text-decoration: underline; font-size: 25px;">Real People, Real Testmonies</P>
-        
-
-
-
-
-
-
-
-        <div class="outerdiv">
+                <div class="outerdiv">
             <div class="innerdiv">
               <!-- div1 -->
               <div class="div11 eachdiv">
@@ -305,24 +305,10 @@
               </div>
             </div>
           </div>
-          <div class="attribution">
+          <!--<div class="attribution">
             Developed by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Maina Michael</a><br>
             Coded by <a href="https://www.instagram.com/developer_sah/" target="_blank">Maina Michael</a>.
-          </div>
-
-
-
-
-
-
-       
-    
-
-
-
-
-        
-       
+          </div>-->
             <hr>
             <div class="contactsec"> 
                 <p>Contact us through</p>
@@ -334,9 +320,6 @@
                 <i class="fab fa-twitter"></i> <a href="https://twitter.com/M_y_k_e_">Twitter</a>
                 <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/m.y__k.e/">Instagram</a>
             </div>
-    
-    
-    
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
     var header = document.querySelector("#navbar");
@@ -352,40 +335,6 @@
           //      navbar.classList.remove("sticky");
           //  }
         });
-
-
-
-
-
-
-        $('.owl-carousel').owlCarousel({
-    loop:false,
-  stagePadding: 15,
-    margin:10,
-    nav:true,
-  navText : ['<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>','<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>'],
-    responsive:{
-        0:{
-            items:1
-        },
-        640:{
-            items:2
-        },
-      960:{
-            items:3
-        },
-        1200:{
-            items:4
-        }
-    }
-});
-
-
-
-
-
-
-
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
@@ -483,6 +432,18 @@ function slideLeft() {
         buttons[0].classList.remove('inactive');
     }
 };
+
+var menu = document.querySelector('#menu');
+var menuBtn = document.querySelector('.menu-btn');
+var closeBtn = document.querySelector('.close-btn');
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.add('active');
+});
+
+closeBtn.addEventListener("click", () => {
+    menu.classList.remove('active');
+});
         
     </script>
 </body>

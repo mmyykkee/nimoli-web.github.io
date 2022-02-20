@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
 * {
   margin: 10px;
   padding: 2px;
@@ -128,7 +130,7 @@ nav li {
 }
 nav ul {
   padding: 2px 0px 0px 20px;
-  background-color: royalblue;
+  
   height: 50px;
 }
 nav a:hover {
@@ -173,8 +175,8 @@ p {
   padding-left: 20px;
 }
 .company-logo {
-  width: 15%;
-  height: 5%;
+  width: 12%;
+  height: 3%;
   margin-top: -30px;
   padding-bottom: -10px;
   transition: all 0.4s ease;
@@ -412,7 +414,7 @@ h3 {
   padding: 15px;
 }
 .contactsec a {
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 .rows:after {
@@ -440,6 +442,8 @@ h3 {
   padding: 5px;
 }
 
+
+/*
 @media only screen and (min-width: 1100px) {
   #slider-container #slider .sliders {
     width: calc(2.5% - 20px);
@@ -462,7 +466,8 @@ h3 {
   #slider-container #slider .sliders {
     width: calc(10% - 20px);
   }
-}
+}*/
+
 .parent {
   display: flex;
   grid-template-columns: repeat(5, 1fr);
@@ -688,8 +693,54 @@ a:link,a:active,a:visited,a:hover{
 	text-decoration: none;
 }
 
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
 @media only screen and (max-width: 1000px)
 {
+  .parent{
+    width: 80%;
+  }
+  .div2 {
+    grid-area: 3 / 4;
+  }
+  header .btn{
+    display: block;
+    color: red;
+     }
+  header #menu{
+    position: fixed;
+    background: #1483d5;
+    flex-direction: column;
+    min-width: 200px;
+    max-height: fit-content;
+    height: 100vh;
+    top: 0;
+    right: 100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+    
+}
+header #menu .close-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 25px;
+}
+header #menu a{
+  display: block;
+  font-size: 20px;
+  margin-inline: 20px;
+  padding: 5px 15px;
+  background: #1483df;
+  top: 0;
+  margin-top: 0;
+}
 	.innerdiv
 	{
 		transform: scale(0.7);
@@ -697,6 +748,7 @@ a:link,a:active,a:visited,a:hover{
 }
 @media only screen and (max-width: 800px)
 {
+  
 	.innerdiv
 	{
 		transform: scale(0.6);
