@@ -1,17 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 * {
   margin: 10px;
   padding: 2px;
   font-size: large;
   box-sizing: border-box;
 }
+html{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
 
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
 #menu{
   background-color: #00f;
+  border-radius: 5px;
+  margin-left: 3px;
+  margin-right: 2px;
 }
 
 #menu a{
   padding: 0px;
   margin: auto;
+}
+
+#menu a:hover{
+  text-decoration: underline;
+  transform: scale(0.1);
+  color: #8c0ed4;
 }
 
 a{
@@ -268,7 +288,7 @@ section .card .image {
   overflow: hidden;
   border-radius: 10px;
   /*changes the height of the card*/
-  min-height: 520px;
+  min-height: 530px;
   min-width: 300px;
   margin: 2px;
   background-image: url();
@@ -379,11 +399,13 @@ h3 {
   text-align: center;
 }
 .contactsec {
-  width: 100%;
+  width: 99.5%;
   height: 100%;
   background-color: blue;
   color: #fff;
   font-family: "Times New Roman", Times, serif;
+  border-radius: 15px;
+  margin-left: 3px;
 }
 .contactsec i {
   color: #fff;
@@ -499,25 +521,21 @@ h3 {
   box-shadow: #00f;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
-body{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Barlow Semi Condensed', sans-serif;
-}
+
 a:link,a:active,a:visited,a:hover{
 	color:#3f51b5;
 }
 
 .outerdiv
 {
-	width: 100%;
+	width: 99.5%;
     min-height: 100vh;
     background: #4400ff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
+    margin-left: 3px;
 }
 .innerdiv
 {
