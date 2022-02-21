@@ -18,19 +18,19 @@ body{
 	box-sizing: border-box;
 	
 }
-#menu{
+.menu{
   background-color: #00f;
   border-radius: 5px;
   margin-left: 3px;
   margin-right: 2px;
 }
 
-#menu a{
+.menu a{
   padding: 0px;
   margin: auto;
 }
 
-#menu a:hover{
+.menu a:hover{
   text-decoration: underline;
   transform: scale(0.1);
   color: #8c0ed4;
@@ -39,7 +39,7 @@ body{
 a{
   padding: 1px;
 }
-#navbar ul li a {
+.navbar ul li a {
   text-decoration: none;
   color: #fff;
   }
@@ -80,43 +80,9 @@ input[name="r"] {
   position: absolute;
   visibility: hidden;
 }
-/* affects the home page images */
-.slides {
-  width: 500%;
-  height: 60%;
-  display: flex;
-  overflow: hidden;
-}
 
-.slide {
-  width: 20%;
-  transition: 0.9s;
-  overflow: hidden;
-  position: absolute;
-}
 
-.slide img {
-  width: 50%;
-  height: 100%;
-}
-/*how images are spaced from one another*/
-#r1:checked ~ .s1 {
-  margin-left: 5%;
-}
-#r2:checked ~ .s1 {
-  margin-left: -15.5%;
-}
-#r3:checked ~ .s1 {
-  margin-left: -36%;
-}
-#r4:checked ~ .s1 {
-  margin-left: -56%;
-}
-#r5:checked ~ .s1 {
-  margin-left: -76.5%;
-}
-
-#navbar {
+.navbar {
   width: 100%;
 }
 nav li {
@@ -240,7 +206,7 @@ p {
   nav ul li a {
     text-decoration: none;
   }
-  #menu {
+  .menu {
     overflow: hidden;
     transition: 1s;
     transform: translatey(10px);
@@ -371,7 +337,7 @@ nav .sticky a {
   transition: all 4s ease;
   display: none;
 }
-.sticky #menu{
+.sticky .menu{
   background-color: blue;
   width: 97.9%;
   transition: all 4s ease;
@@ -703,7 +669,28 @@ header .btn{
 @media only screen and (max-width: 1000px)
 {
   .parent{
+    width: 40%;
+  }
+
+  .div4{
+    width: 40%;
+  }
+  .holder{
     width: 80%;
+    background-color: #00f;
+    margin-left: 3px;
+  }
+
+  .holder .div4{
+    color: #fff;
+  }
+
+  .div4 a{
+    color: #fff;
+  }
+  .company-logo{
+    width: 30%;
+    margin-top: 30px
   }
   .div2 {
     grid-area: 3 / 4;
@@ -712,7 +699,7 @@ header .btn{
     display: block;
     color: red;
      }
-  header #menu{
+  header .menu{
     position: fixed;
     background: #1483d5;
     flex-direction: column;
@@ -724,15 +711,14 @@ header .btn{
     padding: 80px 50px;
     transition: 0.5s;
     transition-property: right;
-    
-}
-header #menu .close-btn{
+    }
+header .menu .close-btn{
   position: absolute;
   top: 0;
   left: 0;
   margin: 25px;
 }
-header #menu a{
+header .menu a{
   display: block;
   font-size: 20px;
   margin-inline: 20px;
@@ -746,13 +732,22 @@ header #menu a{
 		transform: scale(0.7);
 	}
 }
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 768px)
 {
-  
-	.innerdiv
+  	.innerdiv
 	{
 		transform: scale(0.6);
 	}
+
+  .holder{
+    width: 100%;
+    background-color: #00f;
+    margin-left: 3px;
+  }
+
+  .holder .div4{
+    text-align: right;
+  }
 }
 @media only screen and (max-width: 600px)
 {

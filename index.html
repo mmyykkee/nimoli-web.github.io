@@ -16,8 +16,7 @@
        <body id="bbg">
         <title>Nimoli Medical Services</title>
         <header>
-         <nav id="navbar">
-
+         <nav class="navbar">
 
             <div class="holder">
                 
@@ -31,7 +30,7 @@
                 </div>
                
         </div>
-            <div id="menu">
+            <div class="menu">
 
                 <div class="btn">
                     <i class="fas fa-times close-btn"></i>
@@ -322,7 +321,7 @@
             </div>
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
-    var header = document.querySelector("#navbar");
+    var header = document.querySelector(".navbar");
     header.classList.toggle('sticky',window.scrollY > 0);
         //var navbar =document.getElementById("navbar")
          //   var menu =document.getElementById("menu")
@@ -419,6 +418,7 @@ function slideRight() {
     }
 };
 
+
 function slideLeft() {
     if (currentPosition != slidesCount) {
         slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
@@ -433,7 +433,7 @@ function slideLeft() {
     }
 };
 
-var menu = document.querySelector('#menu');
+var menu = document.querySelector('.menu');
 var menuBtn = document.querySelector('.menu-btn');
 var closeBtn = document.querySelector('.close-btn');
 
