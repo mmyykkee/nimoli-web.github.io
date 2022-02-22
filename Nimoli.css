@@ -747,3 +747,11 @@ header #menu a{
 .row2{
   background-color: green;
 }
+
+.brainstormed{
+ 
+ height: 300px;
+ width: 400px;
+ align-content: center;
+ margin-left: 600px;
+}
