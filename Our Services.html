@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="Nimoli.css">
 <body id="bbg">
 
-    <header>
+    <head>
         <title>Our Services</title>
         <nav id="navbar">
           <img src="Images/Final Nimoli Logo 2.jpg" class="company-logo">
@@ -20,7 +20,66 @@
           <li> <a href="About Us.html" target=""> About Us </li></a>
       </ul>
       </nav>
-</header>
+</head>
+
+
+
+<section id="featured-services" class="featured-services">
+  <div class="container1" data-aos="fade-up">
+    <div class="row1">
+      <div class="icon"> <i class="iconfont-patient-bed"></i> </div>
+      <h class="title"><a href="#">In-Patient Services</a></h>
+      <p class="description"></p>
+
+        <div class="column">
+    <div class="card">
+      <h3>Maternity</h3>
+      <img src="Images/maternity-matters-og-banner-v2.png" alt="">
+      <p>We have qualified staff dedicated to offer maternity services and state of the art equipments to enable quality service delivery</p>
+    </div>
+  </div>
+      
+  <div class="column">
+    <div class="card">
+      <h3>Minor Surgery</h3>
+      <img src="Images/minors.jpg" alt="">
+      <p>We offer wide range of family heath services ranging from short term to long term methods at an unbeatable prices</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Theater</h3>
+      <img src="Images/theater.jpg" alt="">
+      <p>We offer wide range of family heath services ranging from short term to long term methods at an unbeatable prices</p>
+    </div>
+  </div>
+
+    </div>
+
+    <div class="row2">
+      <div class="icon"> <i class="iconfont-patient-bed"></i> </div>
+      <h4 class="title"><a href="#">In-Patient Services</a></h4>
+      <p class="description">
+        <li>Maternity</li>
+        <li>Minor Surgery</li>
+        <li>Theater Services</li>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="containers">
   <div class="column">
@@ -39,13 +98,7 @@
     </div>
   </div>
   
-  <div class="column">
-    <div class="card">
-      <h3>Maternity</h3>
-      <img src="Images/maternity-matters-og-banner-v2.png" alt="">
-      <p>We have qualified staff dedicated to offer maternity services and state of the art equipments to enable quality service delivery</p>
-    </div>
-  </div>
+  
   
   <div class="column">
     <div class="card">
@@ -86,37 +139,6 @@
   </div>
 </div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript">
-         window.addEventListener("scroll", function(){
-    var header = document.querySelector("#navbar");
-    header.classList.toggle('sticky',window.scrollY > 0);
-        //var navbar =document.getElementById("navbar")
-         //   var menu =document.getElementById("menu")
-
-          //  window.onscroll = function(){
-          //      if(window.pageYOffset >= menu.offsetTop){
-          //          navbar.classList.add("sticky");
-          //  }
-          //  else{
-          //      navbar.classList.remove("sticky");
-          //  }
-        });
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <script src="nimoli.js"></script>
 </body>
 </html>
