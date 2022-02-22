@@ -734,19 +734,15 @@ header #menu a{
 	}
 }
 
-.container1{
-  background-color: red;
+.container1,.container2,.container3{
+  
   display: flex;
   flex-direction: row;
 }
-.row1{
-  background-color: #00f;
+.row1 , .row2{
   width: fit-content;
-  }
+   }
 
-.row2{
-  background-color: green;
-}
 
 .brainstormed{
  
@@ -754,4 +750,13 @@ header #menu a{
  width: 400px;
  align-content: center;
  margin-left: 600px;
+}
+
+#featured-services{
+  background-color: #fff;
+}
+
+.featured-services .container1 .row1 .column .card{
+  background-color:transparent;
+  
 }
