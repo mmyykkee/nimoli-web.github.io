@@ -455,6 +455,11 @@ a:link,a:active,a:visited,a:hover{
 	color:#3f51b5;
 }
 
+.quoted{
+  width: 99.9%;
+  margin: 0 3px 0 1px;
+ }
+
 .outerdiv
 {
 	width: 99.5%;
@@ -934,20 +939,25 @@ header{
 }
 .outerdiv{
   width: 580px;
+  margin: 0;
 }
 .innerdiv{
-  background-color: green;
-  width: 620px;
+  margin: -50px -50px -50px -50px;
+  display: flex;
+  flex-direction: column;
+ 
+
 }
 
  .div11, .div22, .div33, .div44, .div55 {
-  background-color: red;
-  width: 300px;
-  height: fit-content;
-  display: flexbox;
-  margin: 0;
  
-}
+  width: 550px;
+  height: fit-content;
+  display: flexbox ;
+  margin: 0;
+  }
+
+
 
 .contactsec{
   width: 580px;
