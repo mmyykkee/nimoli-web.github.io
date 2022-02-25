@@ -1,18 +1,18 @@
-var navbar = document.getElementById("navbar");
-var menu = document.getElementById("menu");
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
 
-window.onscroll = function () {
-  if (window.pageYOffset >= menu.offsetTop) {
-    navbar.classList.add("sticky");
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
   } else {
-    navbar.classList.remove("sticky");
+  navbar.classList.remove("sticky");
   }
 };
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
-    delay: 2500,
+    delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {

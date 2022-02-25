@@ -48,7 +48,7 @@ a{
 body {
   margin: 0;
   padding: 0;
-  background: turquoise;
+  background: rgb(255, 255, 255);
   width: 100%;
   transition: (padding-top 0.5s ease);
 }
@@ -79,9 +79,6 @@ body {
 }
 
 
-#navbar {
-  width: 100%;
-}
 nav li {
   display: inline-block;
   padding-left: 0px;
@@ -140,7 +137,7 @@ p {
 .company-logo {
   width: 12%;
   height: 3%;
-  margin-top: -30px;
+  margin-top: -15px;
   padding-bottom: -10px;
   transition: all 0.4s ease;
 }
@@ -214,6 +211,7 @@ section .card .image {
   flex-wrap: nowrap;
   flex-direction: column;
 }
+
 .container {
   position: absolute;
   max-width: 800px;
@@ -222,6 +220,29 @@ section .card .image {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.containers {
+ 
+  width: 1200px;
+  display:inline-flex;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+.containers .column{
+  background-color: f;
+  display: inline-flex;
+  
+
+
+}
+
+.containers .column .card{
+  background-color: f;
+  height: 200px;
+  min-width: 400px;
 }
 
 .card:hover {
@@ -316,10 +337,12 @@ h3 {
   text-align: center;
 }
 .partnercontainer{
-  
-  display: inline-block;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  display: grid;
   flex-direction: row;
 }
+
+
 .contactsec {
   width: 99.5%;
   height: 100%;
@@ -335,7 +358,7 @@ h3 {
 }
 .contactsec a {
   color: #fff !important;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .rows:after {
   content: "";
@@ -363,11 +386,18 @@ h3 {
 }
 
 .parent {
+ 
+  height: fit-content;
   display: flex;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+}
+
+.parent .div1{
+
+  height: 300px;
 }
 .holder {
   display: flex;
@@ -592,151 +622,6 @@ header .btn{
   font-size: 25px;
   cursor: pointer;
   display: none;
-}@media screen and (max-width: 1200px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 30px;
-  }
-  .slides s1 {
-    top: 150px;
-  }
-  .button button:hover {
-    background: gray;
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-  nav ul {
-    width: 100%;
-    background: royalblue;
-    position: absolute;
-    right: 0;
-    z-index: 2;
-    min-height: 50px;
-    transition: all 0.4s ease;
-  }
-  nav ul li {
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-    margin: 1px;
-  }
-  nav ul li a {
-    text-decoration: none;
-  }
-  #menu {
-    overflow: hidden;
-    transition: 1s;
-    transform: translatey(10px);
-  }
-  .menu-icon {
-    display: block;
-  }
-}
-
-
-
-@media only screen and (max-width: 1000px)
-{
-  .parent{
-    width: 40%;
-  }
-
-  .div4{
-    width: 40%;
-  }
-  .holder{
-    width: 80%;
-    background-color: #00f;
-    margin-left: 3px;
-  }
-
-  .holder .div4{
-    color: #fff;
-  }
-
-  .div4 a{
-    color: #fff;
-  }
-  .company-logo{
-    width: 30%;
-    margin-top: 30px
-  }
-  .div2 {
-    grid-area: 3 / 4;
-  }
-  header .btn{
-    display: block;
-    color: red;
-     }
-  header #menu{
-    position: fixed;
-    background: #1483d5;
-    flex-direction: column;
-    min-width: 200px;
-    max-height: fit-content;
-    height: 100vh;
-    top: 0;
-    right: 100%;
-    padding: 80px 50px;
-    transition: 0.5s;
-    transition-property: right;
-    }
-header #menu .close-btn{
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 25px;
-}
-header #menu a{
-  display: block;
-  font-size: 20px;
-  margin-inline: 20px;
-  padding: 5px 15px;
-  background: #1483df;
-  top: 0;
-  margin-top: 0;
-}
-	.innerdiv
-	{
-		transform: scale(0.7);
-	}
-}
-@media only screen and (max-width: 768px)
-{
-  	.innerdiv
-	{
-		transform: scale(0.6);
-	}
-
-  .holder{
-    width: 100%;
-    background-color: #00f;
-    margin-left: 3px;
-  }
-
-  .holder .div4{
-    text-align: right;
-  }
-}
-@media only screen and (max-width: 600px)
-{
-	.div11 {
-		background-position-x: 10rem;
-	}
-	.innerdiv
-	{
-		display: flex; 
-		flex-direction: column;
-		transform: scale(1);
-		margin: 2rem;
-		margin-bottom: 5rem;
-	}
-	.attribution
-	{
-		position: relative;
-	}
 }
 
 .container1,.container2,.container3{
@@ -758,7 +643,7 @@ header #menu a{
 }
 
 #featured-services{
-  background-color: #fff;
+  background-color: #fff;  
 }
 
 .featured-services .container1 .row1 .column .card{
@@ -766,8 +651,15 @@ header #menu a{
   
 }
 
-#featured-services{
-  align-items: center;
+ .container1 .row1 a:hover, .container2 .row2 a:hover, .container3 .row3  a:hover{
+background-color: #00f;
+color: #fff;
+text-decoration: wavy;
+}
+
+.container1 .row1 a, .container2 .row2 a,.container3 .row3 a{
+font-size: 2rem;
+text-decoration: none;
 }
 
 
@@ -852,7 +744,7 @@ header #menu a{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+text-decoration: underline;
 }
 
 /* Fading animation */
@@ -861,6 +753,7 @@ header #menu a{
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+  
 }
 
 @-webkit-keyframes fade {
@@ -871,4 +764,175 @@ header #menu a{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgb(0, 4, 255);
+  margin-top: 0;
+  border-radius: 5px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+ text-decoration: underline;
+  color: #fff;
+}
+
+#navbar a.active {
+  
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 97.8%;
+  margin-left: .9rem;
+ right: 10px;
+  border-radius: 5px;
+  
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+.mapouter{
+ 
+  max-height: 450px;
+
+}
+
+
+
+
+
+
+/* Media Queries */
+
+@media  only screen and (max-width:1240px) {
+header{
+ background-color: #00f;
+}
+.row1, .row3, .row2{
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
+
+}
+
+
+}
+
+@media only  screen and (max-width:1024px) {
+  header{
+    background-color: red;
+  }
+  .row1, .row3, .row2{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+ 
+  }
+}
+
+@media only  screen and (max-width:769px) {
+  header{
+    background-color: #fff;
+    height: 100px;
+  }
+  header .btn{
+    display: block;
+    color: #00f;
+  }
+  header .holder a{
+    
+    font-size: 1rem;
+    top: -10px;
+    position: relative;
+  }
+  header .holder i{
+    margin-top: 0;
+  }
+  header .holder .company-logo{
+    margin-top: 2px;
+    height: 50%;
+  }
+  .company-logo{
+    width: 20%;
+  }
+  header .holder p{
+    display: none;
+  }
+  #navbar{
+    display: none;
+    width: 100%;
+  }
+  .parent .div1 {
+    margin-left: .01rem;
+    width: 40%;
+  }
+  .parent .swiper{
+    
+    margin-left: 0;
+    
+    width: auto;
+  }
+
+  .parent .div1 .swiper-slide{
+    margin-left: -1px;
+    margin-bottom: -10px;
+  }
+ 
+  .parent .div2 h2{
+    background-color: #733FC8;
+   font-size: 1rem;
+  }
+  .parent .div2 p{
+    font-size: .7rem;
+  }
+ .row1, .row3, .row2{
+   background-color: #fff;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+ }
+
+}
+
+@media only  screen and (max-width:481px) {
+  header{
+    background-color: rgb(0, 195, 255);
+    }
+    .contactsec{
+      width: 98.5%;
+    }
+
+}
+
+@media only  screen and (max-width:320px) {
+  header{
+    background-color: rgb(229, 255, 0);
+  }
 }
