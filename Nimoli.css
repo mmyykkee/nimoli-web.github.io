@@ -919,6 +919,39 @@ header{
 
  }
 
+ .div5{
+   margin: auto;
+   margin-left: 50px;
+ }
+
+ .quoted p {
+   font-size: 0.6rem;
+
+ }
+ .quoted img {
+ size: 10%;
+  background-color: green;
+}
+.outerdiv{
+  width: 580px;
+}
+.innerdiv{
+  background-color: green;
+  width: 620px;
+}
+
+ .div11, .div22, .div33, .div44, .div55 {
+  background-color: red;
+  width: 300px;
+  height: fit-content;
+  display: flexbox;
+  margin: 0;
+ 
+}
+
+.contactsec{
+  width: 580px;
+}
 }
 
 @media only  screen and (max-width:481px) {
@@ -935,4 +968,12 @@ header{
   header{
     background-color: rgb(229, 255, 0);
   }
+}
+
+
+
+.div5{
+  background-color: #00f;
+ 
+  margin-left: 25rem;
 }
