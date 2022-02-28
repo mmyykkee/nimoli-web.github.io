@@ -1065,14 +1065,13 @@ header .holder .company-logo{
     
   }
   header .holder a{
-    background-color: rgb(255, 76, 6);
+  
     font-size: 1rem;
     top: 10px;
       }
   header .div4 i{
     margin-top: 00px;
-    background-color: red;
-  }
+    }
   .company-logo{
     width: 100px;
     height: 100%;
@@ -1370,11 +1369,9 @@ header .holder .company-logo{
       margin-top: 40px;
     }
   .company-logo{
+    margin-top: 10px;
      margin-left: -30px;
-    width: 100%;
-    background-color:rgb(90, 1, 1);
-    
-    
+    width: 100%; 
     }
     .contactsec{
       width: 100%;
