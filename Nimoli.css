@@ -1056,29 +1056,27 @@ header .holder .company-logo{
 
 @media only  screen and (max-width:767px) {
   header{
-    background-color: rgb(73, 218, 16);
-    height: 100px;
+   background-color: rgb(10, 248, 208);
+    height: 100%;
+    width: 10%;
   }
   header .btn{
     display: block;
     
   }
   header .holder a{
-    
+    background-color: rgb(255, 76, 6);
     font-size: 1rem;
-    top: -10px;
-    position: relative;
-  }
+    top: 10px;
+      }
   header .div4 i{
-    margin-top: -100px;
-  }
-  header .holder .company-logo{
-    margin-top: 2px;
-    height: 50%;
+    margin-top: 00px;
+    background-color: red;
   }
   .company-logo{
-    width: 20%;
-  }
+    width: 100px;
+    height: 100%;
+     }
   header .holder p{
     display: none;
   }
@@ -1176,6 +1174,19 @@ header .holder .company-logo{
 .contactsec{
   width: 99.6%;
 }
+.mapouter{
+  width: 102%;
+  height: 100%;
+  margin-left: -15px;
+  position: relative;
+}
+#gmap_canvas{
+  position: absolute;
+  margin-left: -10px;
+  width: 99%;
+  float: left;
+  margin: 0;
+}
 }
 
 @media only  screen and (max-width:500px) {
@@ -1200,7 +1211,8 @@ header .holder .company-logo{
       height: 20%;
     }
   .company-logo{
-    
+    width: 400%;
+    height: 300%;
     margin-left: -10px;
     }
     .contactsec{
@@ -1223,14 +1235,8 @@ header .holder .company-logo{
     header .div4 i{
       margin-top: -100px;
     }
-    header .holder .company-logo{
-      margin-top: 2px;
-      height: 50%;
-    }
-    .company-logo{
-      width: 20%;
-    }
-    header .holder p{
+   
+      header .holder p{
       display: none;
     }
   
@@ -1332,18 +1338,24 @@ header .holder .company-logo{
 
 @media only  screen and (max-width:481px) {
   header{
-    background-color: #fff;
     margin-right: -390px;
+    width: 100%;
     }
 
     .btn{
-      position: relative;
-      color: rgb(247, 4, 4);
+      display: none;
     }
 
     hr{
       display: none;
     }
+
+    .holder{
+      margin-top: -30px;
+      width: 52%;
+      
+    }
+
     .holder .div5{
       
       top: 70px;
@@ -1351,9 +1363,18 @@ header .holder .company-logo{
       width: 40%;
       height: 20%;
     }
+
+    .holder .div4{
+      right:0 ;
+      margin-right: -1000px;
+      margin-top: 40px;
+    }
   .company-logo{
+     margin-left: -30px;
+    width: 100%;
+    background-color:rgb(90, 1, 1);
     
-    margin-left: -10px;
+    
     }
     .contactsec{
       width: 100%;
@@ -1375,13 +1396,7 @@ header .holder .company-logo{
     header .div4 i{
       margin-top: -100px;
     }
-    header .holder .company-logo{
-      margin-top: 2px;
-      height: 50%;
-    }
-    .company-logo{
-      width: 20%;
-    }
+  
     header .holder p{
       display: none;
     }
@@ -1479,6 +1494,19 @@ header .holder .company-logo{
   
   .contactsec{
     width: 99.6%;
+  }
+
+  .mapouter{
+    background-color: red;
+    width: 350px;
+    height: 600px;
+    position: relative;
+  }
+  #gmap_canvas{
+    background-color: green;
+    width: 325px;
+    float: left;
+    margin: 0;
   }
 }
 
