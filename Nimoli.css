@@ -1057,7 +1057,6 @@ header .holder .company-logo{
 @media only  screen and (max-width:767px) {
   header{
    background-color: rgb(10, 248, 208);
-    height: 100%;
     width: 10%;
   }
   header .btn{
@@ -1192,6 +1191,7 @@ header .holder .company-logo{
   header{
     background-color: #fff;
     margin-right: -390px;
+    height: 130px;
     }
 
     .btn{
@@ -1203,7 +1203,7 @@ header .holder .company-logo{
       display: none;
     }
     .holder .div5{
-      
+    
       top: 70px;
       left: -100px;
       width: 40%;
@@ -1217,6 +1217,18 @@ header .holder .company-logo{
     .contactsec{
       width: 100%;
       
+    }
+    .holder{
+      
+      width: 100%;
+    }
+
+    .holder  .div4{
+      width: auto;
+      float: right;
+      right: 0;
+      margin-right: -00px;
+      position: absolute;
     }
     .parent{
     background-color: #00f;
@@ -1339,6 +1351,7 @@ header .holder .company-logo{
   header{
     margin-right: -390px;
     width: 100%;
+    height: 150px;
     }
 
     .btn{
@@ -1365,7 +1378,7 @@ header .holder .company-logo{
 
     .holder .div4{
       right:0 ;
-      margin-right: -1000px;
+      margin-right: 0px;
       margin-top: 40px;
     }
   .company-logo{
@@ -1508,6 +1521,10 @@ header .holder .company-logo{
 }
 
 @media only  screen and (max-width:320px) {
+  header{
+    height: 90px;
+  }
+ 
   header .holder a{
     
     font-size: 1rem;
@@ -1519,10 +1536,8 @@ header .holder .company-logo{
   }
   header .holder .company-logo{
     margin-top: 2px;
-    height: 50%;
-  }
-  .company-logo{
-    width: 20%;
+    width: 150px;
+  
   }
   header .holder p{
     display: none;
@@ -1564,9 +1579,9 @@ header .holder .company-logo{
   }
   .parent .swiper{
     
-    margin-left: 0;
-    
-    width: auto;
+    margin-left: -25px;
+    height: -150px;
+    width:200px;
   }
 
   .parent .div1 .swiper-slide{
@@ -1576,11 +1591,11 @@ header .holder .company-logo{
  
   .parent .div2 h2{
     background-color: #733FC8;
-   font-size: 1rem;
+   font-size: .8rem;
   }
   .parent .div2 p{
     
-    font-size: .7rem;
+    font-size: .5rem;
   }
  .row1, .row3, .row2{
    background-color: #fff;
