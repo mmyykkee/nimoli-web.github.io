@@ -830,21 +830,37 @@ text-decoration: underline;
 
 .div5{
   margin-left: 25rem;
-  height: 50%;
   position: relative;
-}
+ }
 
 .div5 img{
   height: 70%;
 }
 
+.div5 p{
+  position: absolute;
+  margin-top: -15px;
+  color: #00f;
+  font-weight: bolder;
+  text-decoration: wavy;
+}
+
+.advert{
+  width: 100%;
+  height: 100%;
+}
 
 
 /* Media Queries */
+@media  only screen and (max-width:1600px) {
+  .holder .div5{
+    margin-left: 300px;
+  }
 
+}
 @media  only screen and (max-width:1240px) {
-header{
- background-color: #00f;
+header .holder .company-logo{
+ height: 100%;
 }
 .row1, .row3, .row2{
   background-color: #fff;
@@ -853,29 +869,199 @@ header{
 
 }
 
+.holder .div5{
+  margin-left: 200px;
+}
+
+.parent{
+  width: 100%;
+}
+.parent .div1 {
+ margin-left: .01rem;
+ width: 40%;}
+ .parent .swiper{
+ 
+   margin-left: 0;
+   
+   width: auto;
+ }
+
+ .parent .div1 .swiper-slide{
+   margin-left: -1px;
+   margin-bottom: -10px;
+ }
+
+ .parent .div2 h2{
+   background-color: #733FC8;
+  
+ }
+ .parent .div2 p{
+   
+   font-size: rem;
+ }
+ .quoted p {
+   font-size: 0.7rem;
+   
+ }
+ .quoted {
+   width: 100%;
+   height: max-content;
+   
+  
+}
+.outerdiv{
+  width: 99.4%;
+  margin: 3px;
+  position: relative;
+}
+.innerdiv{
+  margin: -50px 0px -50px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 98.5%;
+}
+.outerdiv .innerdiv .div11{
+ 
+ width: 100%;
+}
+.outerdiv .innerdiv .div22{
+
+ width: 100%;
+}
+.outerdiv .innerdiv .div33{
+ 
+ width: 100%;
+}
+.outerdiv .innerdiv .div44{
+
+ width: 100%;
+}
+.outerdiv .innerdiv .div55{
+ 
+ width: 100%;
+}
+ .div11, .div22, .div33, .div44, .div55 {
+ 
+  width: 900px;
+  height: fit-content;
+  display: flexbox ;
+  margin: 0;
+  }
+
+
+
+
 
 }
 
 @media only  screen and (max-width:1024px) {
+  .holder .company-logo{
+    height: 100%;
+  }
+  
+  .holder .div5{
+    margin-left: 120px;
+  }
   header{
-    background-color: red;
+    
+    font-size: 1.5rem;
+  }
+  header #navbar a{
+    font-size: 0.7rem;
+    padding: 5px;
+
   }
   .row1, .row3, .row2{
     background-color: #fff;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
- 
+   }
+   .parent{
+     width: 100%;
+   }
+   .parent .div1 {
+    margin-left: .01rem;
+    width: 40%;}
+    .parent .swiper{
+    
+      margin-left: 0;
+      
+      width: auto;
+    }
+  
+    .parent .div1 .swiper-slide{
+      margin-left: -1px;
+      margin-bottom: -10px;
+    }
+   
+    .parent .div2 h2{
+      background-color: #733FC8;
+     
+    }
+    .parent .div2 p{
+      
+      font-size: .7rem;
+    }
+    .quoted p {
+      font-size: 0.6rem;
+      
+    }
+    .quoted {
+      width: 100%;
+      height: max-content;
+      
+     
+   }
+   .outerdiv{
+     width: 99.4%;
+     margin: 3px;
+     position: relative;
+   }
+   .innerdiv{
+     margin: -50px 0px -50px 0px;
+     display: flex;
+     flex-direction: column;
+     width: 98.5%;
+   }
+   .outerdiv .innerdiv .div11{
+    
+    width: 100%;
   }
+  .outerdiv .innerdiv .div22{
+   
+    width: 100%;
+  }
+  .outerdiv .innerdiv .div33{
+    
+    width: 100%;
+  }
+  .outerdiv .innerdiv .div44{
+   
+    width: 100%;
+  }
+  .outerdiv .innerdiv .div55{
+    
+    width: 100%;
+  }
+    .div11, .div22, .div33, .div44, .div55 {
+    
+     width: 900px;
+     height: fit-content;
+     display: flexbox ;
+     margin: 0;
+     }
+   
+   
 }
 
-@media only  screen and (max-width:769px) {
+@media only  screen and (max-width:767px) {
   header{
-    background-color: #fff;
+    background-color: rgb(73, 218, 16);
     height: 100px;
   }
   header .btn{
     display: block;
-    color: #00f;
+    
   }
   header .holder a{
     
@@ -898,12 +1084,11 @@ header{
   }
 
   header .div5{
-    
     position: absolute;
     width: 250px;
     height: 300px;
-    margin-left: 10px;
-    margin-top: 300px;
+    left: -100px;
+    margin-top: 320px;
   }
 
   hr{
@@ -963,20 +1148,22 @@ header{
    
  }
  .quoted {
-   width: 850px;
+   width: 100%;
    
   
 }
 .outerdiv{
-  width: 850px;
+  width: 100%;
   margin: 0;
-  position: absolute;
+ 
 }
 .innerdiv{
   margin: -50px 0px -50px 0px;
   display: flex;
   flex-direction: column;
 }
+
+
 
  .div11, .div22, .div33, .div44, .div55 {
  
@@ -987,30 +1174,38 @@ header{
   }
 
 .contactsec{
-  width: 850px;
+  width: 99.6%;
 }
 }
 
 @media only  screen and (max-width:481px) {
   header{
-    
+    background-color: #fff;
     margin-right: -390px;
     }
+
+    .btn{
+      position: relative;
+      color: rgb(247, 4, 4);
+    }
+
     hr{
       display: none;
     }
-    .div5{
+    .holder .div5{
       
       top: 70px;
-      left: 80px;
-      position: absolute;
+      left: -100px;
+      width: 40%;
+      height: 20%;
     }
   .company-logo{
     
     margin-left: -10px;
     }
     .contactsec{
-      width: 845px;
+      width: 100%;
+      
     }
     .parent{
     background-color: #00f;
@@ -1019,33 +1214,236 @@ header{
     .quoted{
       position: relative;
     }
-}
+    header .holder a{
+    
+      font-size: 1rem;
+      top: -10px;
+      position: relative;
+    }
+    header .div4 i{
+      margin-top: -100px;
+    }
+    header .holder .company-logo{
+      margin-top: 2px;
+      height: 50%;
+    }
+    .company-logo{
+      width: 20%;
+    }
+    header .holder p{
+      display: none;
+    }
+  
+    header .div5{
+      position: absolute;
+      width: 250px;
+      height: 300px;
+      left: -100px;
+      margin-top: 320px;
+      display: none;
+    }
+  
+    hr{
+      position: relative;
+    }
+  
+    header .div5 img{
+      width:  90%;
+      position: relative;
+    }
+  
+    header .div5 p{
+      color: green;
+      position: absolute;
+    }
+    #navbar{
+      display: none;
+      width: 100%;
+    }
+  
+    .parent{
+      background-color: #fff;
+    }
+    .parent .div1 {
+      margin-left: .01rem;
+      width: 40%;
+    }
+    .parent .swiper{
+      position: relative;
+      margin-left: -25px;
+      height: -150px;
+      width: 220px;
+      flex-wrap: wrap;
+    }
+    .parent .div1 .swiper-slide{
+      margin-left: -1px;
+      margin-bottom: -10px;
+    }
+   
+    .parent .div2 h2{
+      background-color: #733FC8;
+     font-size: 1rem;
+    }
+    .parent .div2 p{
+      width: 100%;
+      font-size: .6rem;
+    }
+   .row1, .row3, .row2{
+     background-color: #fff;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  
+   }
+  .quoted p {
+     font-size: 0.4rem;
+     
+   }
+   .quoted {
 
-@media only  screen and (max-width:360px) {
-  .parent{
-    margin-right: -850px;
+     width: 100%;
+     
+    
+  }
+  .outerdiv{
+    width: 100%;
+    margin: 0;
+   
+  }
+  .innerdiv{
+    margin: -50px 0px -50px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+   .div11, .div22, .div33, .div44, .div55 {
+   
+    width: 900px;
+    height: fit-content;
+    display: flexbox ;
+    margin: 0;
+    }
+  
+  .contactsec{
+    width: 99.6%;
   }
 }
 
 @media only  screen and (max-width:320px) {
-  header{
-   
-    margin-right: -550px;
+  header .holder a{
+    
+    font-size: 1rem;
+    top: -10px;
+    position: relative;
+  }
+  header .div4 i{
+    margin-top: -100px;
+  }
+  header .holder .company-logo{
+    margin-top: 2px;
+    height: 50%;
+  }
+  .company-logo{
+    width: 20%;
+  }
+  header .holder p{
+    display: none;
+  }
+
+  header .div5{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: -100px;
+    margin-top: 320px;
+  }
+
+  hr{
+    position: relative;
+  }
+
+  header .div5 img{
+    width:  90%;
+    position: relative;
+  }
+
+  header .div5 p{
+    color: green;
+    position: absolute;
+  }
+  #navbar{
+    display: none;
+    width: 100%;
   }
 
   .parent{
-    background-color: #fff;
-    margin-right: -550px;
-    height: fit-content;
+    
+    margin-right: -120px;
   }
-  .parent p{
-    line-height: normal;
-    font-size: 1300px;
+  .parent .div1 {
+    margin-left: .01rem;
+    width: 40%;
+  }
+  .parent .swiper{
+    
+    margin-left: 0;
+    
+    width: auto;
+  }
+
+  .parent .div1 .swiper-slide{
+    margin-left: -1px;
+    margin-bottom: -10px;
+  }
+ 
+  .parent .div2 h2{
+    background-color: #733FC8;
+   font-size: 1rem;
+  }
+  .parent .div2 p{
+    
+    font-size: .7rem;
+  }
+ .row1, .row3, .row2{
+   background-color: #fff;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+ }
+.quoted p {
+   font-size: 0.6rem;
+   
+ }
+ .quoted {
+   width: 100%;
+   
   
+}
+.outerdiv{
+  width: 100%;
+  margin: 0;
+ 
+}
+.innerdiv{
+  margin: -50px 0px -50px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+ .div11, .div22, .div33, .div44, .div55 {
+ 
+  width: 900px;
+  height: fit-content;
+  display: flexbox ;
+  margin: 0;
   }
-  p{
-    font-size: 8rem;
-  }
+
+.contactsec{
+  width: 99.6%;
+}
 }
 
 
