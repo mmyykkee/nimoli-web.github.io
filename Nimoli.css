@@ -1178,6 +1178,158 @@ header .holder .company-logo{
 }
 }
 
+@media only  screen and (max-width:500px) {
+  header{
+    background-color: #fff;
+    margin-right: -390px;
+    }
+
+    .btn{
+      position: relative;
+      color: rgb(247, 4, 4);
+    }
+
+    hr{
+      display: none;
+    }
+    .holder .div5{
+      
+      top: 70px;
+      left: -100px;
+      width: 40%;
+      height: 20%;
+    }
+  .company-logo{
+    
+    margin-left: -10px;
+    }
+    .contactsec{
+      width: 100%;
+      
+    }
+    .parent{
+    background-color: #00f;
+    margin-right: -400px;
+    }
+    .quoted{
+      position: relative;
+    }
+    header .holder a{
+    
+      font-size: 1rem;
+      top: -10px;
+      position: relative;
+    }
+    header .div4 i{
+      margin-top: -100px;
+    }
+    header .holder .company-logo{
+      margin-top: 2px;
+      height: 50%;
+    }
+    .company-logo{
+      width: 20%;
+    }
+    header .holder p{
+      display: none;
+    }
+  
+    header .div5{
+      position: absolute;
+      width: 250px;
+      height: 300px;
+      left: -100px;
+      margin-top: 320px;
+      display: none;
+    }
+  
+    hr{
+      position: relative;
+    }
+  
+    header .div5 img{
+      width:  90%;
+      position: relative;
+    }
+  
+    header .div5 p{
+      color: green;
+      position: absolute;
+    }
+    #navbar{
+      display: none;
+      width: 100%;
+    }
+  
+    .parent{
+      background-color: #fff;
+    }
+    .parent .div1 {
+      margin-left: .01rem;
+      width: 40%;
+    }
+    .parent .swiper{
+      position: relative;
+      margin-left: -25px;
+      height: -150px;
+      width: 220px;
+      flex-wrap: wrap;
+    }
+    .parent .div1 .swiper-slide{
+      margin-left: -1px;
+      margin-bottom: -10px;
+    }
+   
+    .parent .div2 h2{
+      background-color: #733FC8;
+     font-size: 1rem;
+    }
+    .parent .div2 p{
+      width: 100%;
+      font-size: .6rem;
+    }
+   .row1, .row3, .row2{
+     background-color: #fff;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  
+   }
+  .quoted p {
+     font-size: 0.4rem;
+     
+   }
+   .quoted {
+
+     width: 100%;
+     
+    
+  }
+  .outerdiv{
+    width: 100%;
+    margin: 0;
+   
+  }
+  .innerdiv{
+    margin: -50px 0px -50px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+   .div11, .div22, .div33, .div44, .div55 {
+   
+    width: 900px;
+    height: fit-content;
+    display: flexbox ;
+    margin: 0;
+    }
+  
+  .contactsec{
+    width: 99.6%;
+  }
+}
+
 @media only  screen and (max-width:481px) {
   header{
     background-color: #fff;
