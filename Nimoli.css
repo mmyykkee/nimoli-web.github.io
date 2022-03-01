@@ -269,7 +269,7 @@ button:hover {
   visibility: hidden;
 }
 
-nav .sticky {
+.sticky #navbar  {
   padding: 3px 90px;
   background: #fff;
   position: fixed;
@@ -280,17 +280,18 @@ nav .sticky a {
   background-color: #00f;
 }
 .sticky {
+  background-color: #00f !important;
   position: fixed;
-  transition: ease;
+  width: 97.8% !important;
+  transition: all 0ms ease !important;
   top: -10px;
-  left: 0;
-  padding: 0px;
-  align-items: center;
-  justify-content: space-between;
   opacity: 1;
-  background: #ffff;
   overflow: hidden;
+
   z-index: 9999;
+}
+.sticky + .content {
+  padding-top: 600px;
 }
 .sticky .company-logo {
   width: 10%;
@@ -306,7 +307,7 @@ nav .sticky a {
   transition: all 4s ease;
   display: none;
 }
-.sticky #menu{
+.sticky #navbar{
   background-color: blue;
   width: 97.9%;
   transition: all 4s ease;
@@ -637,13 +638,12 @@ header .btn{
   width: fit-content;
    }
 
-
-.brainstormed{
+ .brainstormed{
  
- height: 300px;
- width: 400px;
- align-content: center;
- margin-left: 600px;
+ height: 30px;
+ width: 40px;
+ 
+ 
 }
 
 #featured-services{
@@ -778,9 +778,11 @@ text-decoration: underline;
 
 #navbar {
   overflow: hidden;
-  background-color: rgb(0, 4, 255);
+  background-color: #00f;
   margin-top: 0;
   border-radius: 5px;
+  width: 100%;
+  margin-left: -10px;
 }
 
 #navbar a {
@@ -805,22 +807,7 @@ text-decoration: underline;
 
 .content {
   padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 97.8%;
-  margin-left: .9rem;
- right: 10px;
-  border-radius: 5px;
-  
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
+} 
 
 .mapouter{
  
@@ -1210,9 +1197,18 @@ header .holder .company-logo{
       height: 20%;
     }
   .company-logo{
-    width: 400%;
-    height: 300%;
-    margin-left: -10px;
+    width: 40%;
+    height: 30%;
+    
+    }
+
+    h1{
+      font-size: 2em;
+      text-decoration-line: underline;
+      text-align: left;
+    }
+    .column{
+      height: fit-content;
     }
     .contactsec{
       width: 100%;
@@ -1383,8 +1379,8 @@ header .holder .company-logo{
     }
   .company-logo{
     margin-top: 10px;
-     margin-left: -30px;
-    width: 100%; 
+    
+    width: 40%; 
     }
     .contactsec{
       width: 100%;
