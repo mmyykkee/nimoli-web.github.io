@@ -1340,17 +1340,14 @@ header .holder .company-logo{
   header{
     background-color: #fff;
     margin-right: -390px;
-    height: 130px;
+    height: 100px;
     }
 
-    header{
-   
-      height: 60px;
-    }
    
     .company-logo{
-      height: 80%;
-     width: 65%;
+      height: 40%;
+     width: 30% !important;
+    
       }
    
    
@@ -1358,7 +1355,7 @@ header .holder .company-logo{
       .btns{
        display: flex;
        position: absolute;
-       top: 60px;
+       top: 70px;
        left: -15px;
        height: 20px;
        width: 45px;
@@ -1413,6 +1410,8 @@ header .holder .company-logo{
        width: fit-content;
        margin-left: -60px;
        list-style: none;
+       top: -15px;
+       bottom: 0px;
      }
      nav ul li{
      
@@ -1517,6 +1516,7 @@ header .holder .company-logo{
       }
    
        .div2{
+         
        background-color: #fff;
         z-index: 99;
       }
@@ -2029,8 +2029,8 @@ header .holder .company-logo{
   }
 }
 
-@media only screen and (max-width:414px) {
-header  .btn{
+@media only screen and (max-width:415px) {
+header  .bts{
     background-color: red;
     height: 100px;
     width: 100px;
@@ -2044,16 +2044,15 @@ header  .btn{
  
   .company-logo{
     height: 80%;
-   width: 80%;
-   background-color: red;
-    }
+   width: 65%;
+       }
  
  
  
     .btns{
      display: flex;
      position: absolute;
-     top: 60px;
+     top: 55px;
      left: -15px;
      height: 20px;
      width: 45px;
@@ -2110,7 +2109,7 @@ header  .btn{
      list-style: none;
    }
    nav ul li{
-   
+      
      line-height: -3px;
      border-top: 1px solid rgba(255,255,255,0.1);
    }

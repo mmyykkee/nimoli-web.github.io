@@ -1,3 +1,20 @@
+$('.btns').click(function(){
+  $(this).toggleClass("click");
+  $('.sidebar').toggleClass("show");
+});
+  $('.feat-btn').click(function(){
+    $('nav ul .feat-show').toggleClass("show");
+    $('nav ul .first').toggleClass("rotate");
+  });
+  $('.serv-btn').click(function(){
+    $('nav ul .serv-show').toggleClass("show1");
+    $('nav ul .second').toggleClass("rotate");
+  });
+  $('nav ul li').click(function(){
+    $(this).addClass("actives").siblings().removeClass("actives");
+  });
+
+
 const navbar = document.getElementById("navbar");
 const sticky = navbar.offsetTop;
 
