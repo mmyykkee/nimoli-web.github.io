@@ -6,13 +6,157 @@
   padding: 2px;
   font-size: large;
   box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
 }
 html{
   font-family: 'Barlow Semi Condensed', sans-serif;
   scroll-behavior: smooth;
+
 }
+.btns{
+  position: absolute;
+  top: 230px;
+  left: 5px;
+  height: 20px;
+  width: 45px;
+  text-align: center;
+  color: #00f;
+ 
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+.btns .click{
+  left: 260px;
+  background-color: rgb(51, 202, 83);
+}
+/*changes the three line */
+.btns span{
+  color: #00f;
+  font-size: 28px;
+  line-height: 45px;
+}
+/* chnages the background of the button after clicking*/
+.btns.click span:before{
+  content: '\f00d';
+  background-color: red;
+  left: 30px;
+}
+.sidebar{
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  left: -250px;
+  background: #fff;
+  transition: left 2s ease;
+}
+.sidebar.show{
+  left: 0px;
+  }
+.sidebar .text{
+    color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #ffffff;
+  letter-spacing: 1px;
+}
+nav ul{
+  background-color: #fff;
+ position: absolute;
+ z-index: 999;
+  height: fit-content;
+  width: fit-content;
+  margin-left: -60px;
+  list-style: none;
+}
+nav ul li{
 
-
+  line-height: -3px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+nav ul li:last-child{
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+nav ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+nav ul li .actives a{
+  color: cyan;
+  background: #1e1e1e;
+  border-left-color: cyan;
+}
+nav ul li a:hover{
+ text-decoration: underline solid;
+}
+nav ul ul{
+  position: static;
+  display: none;
+}
+nav ul .feat-show.show{
+  display: block;
+}
+nav ul .serv-show.show1{
+  display: block;
+}
+nav ul ul li{
+  line-height: 42px;
+  border-top: none;
+}
+nav ul li a{
+  padding: 0 50px;
+ 
+  font-size: 17px;
+  color: #e6e6e6;
+  padding-left: 40px;
+}
+nav ul li .actives ul li a{
+  color: #e6e6e6;
+  background: #1b1b1b;
+  border-left-color: transparent;
+}
+nav ul ul li a:hover{
+  color: cyan!important;
+  background: #1e1e1e!important;
+}
+nav ul li a span{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+nav ul li a span.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+}
+.contents{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #202020;
+  z-index: -1;
+  text-align: center;
+}
+.contents .header{
+  font-size: 45px;
+  font-weight: 600;
+}
+.contents p{
+  font-size: 30px;
+  font-weight: 500;
+}
 body{
 	margin: 0;
 	padding: 0;
@@ -42,10 +186,6 @@ body{
 a{
   padding: 1px;
 }
-.navbar ul li a {
-  text-decoration: none;
-  color: #fff;
-  }
 body {
   margin: 0;
   padding: 0;
@@ -80,23 +220,7 @@ body {
 }
 
 
-nav li {
-  display: inline-block;
-  padding-left: 0px;
-  margin-left: 40px;
-  font-size: large;
-  font-weight: bolder;
-  color: #ffff;
-  height: 20px;
-}
-nav ul {
-  padding: 2px 0px 0px 20px;
-  
-  height: 50px;
-}
-nav a:hover {
-  color: #fff;
-}
+
 .font-style {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
@@ -233,17 +357,11 @@ section .card .image {
 }
 
 .containers .column{
-  background-color: f;
-  display: inline-flex;
-  
-
-
-}
-
-.containers .column .card{
-  background-color: f;
-  height: 200px;
-  min-width: 400px;
+  background-color: #fff;
+    display: grid;
+	grid-gap: .5rem;
+	grid-template-rows: repeat(2,27rem);
+	grid-template-columns: repeat(4,17rem);
 }
 
 .card:hover {
@@ -801,7 +919,7 @@ text-decoration: underline;
   color: #fff;
 }
 
-#navbar a.active {
+#navbar a.actives {
   
   color: white;
 }
@@ -849,6 +967,9 @@ text-decoration: underline;
 @media  only screen and (max-width:1240px) {
 header .holder .company-logo{
  height: 100%;
+}
+.sidebar ,.btns{
+  display: none;
 }
 .row1, .row3, .row2{
   background-color: #fff;
@@ -1042,14 +1163,13 @@ header .holder .company-logo{
    
 }
 
-@media only  screen and (max-width:767px) {
+@media only  screen and (max-width:768px) {
   header{
-   background-color: rgb(10, 248, 208);
-    width: 10%;
+   width: 100%;
   }
   header .btn{
-    display: block;
-    
+    display:none;
+    /*for now*/
   }
   header .holder a{
   
@@ -1060,8 +1180,8 @@ header .holder .company-logo{
     margin-top: 00px;
     }
   .company-logo{
-    width: 100px;
-    height: 100%;
+    width: 30%;
+    height: 30%;
      }
   header .holder p{
     display: none;
@@ -1072,7 +1192,7 @@ header .holder .company-logo{
     width: 250px;
     height: 300px;
     left: -100px;
-    margin-top: 320px;
+    margin-top: 480px;
   }
 
   hr{
@@ -1089,10 +1209,44 @@ header .holder .company-logo{
     position: absolute;
   }
   #navbar{
-    display: none;
+    position: relative;
+    display: inline-block;
     width: 100%;
-  }
+    }
 
+    #navbar a{
+      font-size: .7rem;
+      padding: 0;
+    }
+
+    h1{
+      margin: -10px;
+       }
+    .slideshow-container img{
+      width: 100%;
+    }
+    body img{
+      margin: 0 ;
+    }
+
+    body p{
+      font-size: .8rem;
+      
+    }
+    .containers .column .card{
+      background-color: #fff;
+      box-shadow: none;
+  
+    }
+    .partnercontainer .column .card img{
+      margin-left: 15px;
+    }
+
+    .featured-services .container1 img, .container2 img, .container3 img {
+      
+      margin-left: 15px;
+    }
+  
   .parent{
     
     margin-right: -120px;
@@ -1173,6 +1327,7 @@ header .holder .company-logo{
   float: left;
   margin: 0;
 }
+
 }
 
 @media only  screen and (max-width:500px) {
@@ -1514,6 +1669,16 @@ header .holder .company-logo{
     width: 325px;
     float: left;
     margin: 0;
+  }
+}
+
+@media only screen and (max-width:414px) {
+header  .btn{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-left: 100px;
   }
 }
 
