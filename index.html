@@ -208,15 +208,40 @@
         </div>
     </div>
     <div class="div2"> 
+      <p>
         <h2>Our Mission</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam similique et perspiciatis, veritatis sapiente id possimus tempore sed. Aliquam in maiores rerum consequuntur? Perferendis rem blanditiis maiores nam quaerat?</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam similique et perspiciatis, veritatis sapiente id possimus tempore sed.  Aliquam in maiores rerum consequuntur? Perferendis rem blanditiis maiores nam  quaerat? consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit.
+        
+        
         <h2>Our Vision</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel suscipit sunt hic impedit adipisci iure amet consequuntur dolorum aliquam aperiam nostrum, ullam minima est doloribus quae, obcaecati quod harum magnam?</p>
+        Lorem ipsum dolor sit  amet consectetur adipisicing elit. Vel suscipit sunt hic impedit adipisci iureamet consequuntur dolorum aliquam aperiam nostrum, ullam minima est doloribus quae, obcaecati quod harum magnam? consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit.
+         
         <h2>Our Pledge</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ex ab atque iure quas, nisi dignissimos tempora voluptate ullam. Quos doloribus nam excepturi laudantium tenetur, corrupti voluptas enim repellat aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit. Autem earum aperiam sed debitis.</p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ex ab atque iure quas, nisi dignissimos tempora voluptate ullam. Quos doloribus nam excepturi laudantium tenetur, corrupti voluptas enim repellat aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit. consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit.  Autem earum aperiam sed debitis.
+     </p>
+    
+    </div>
+
+      <div class="div333"> 
+        <p>
+          <h2>Our Mission</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam similique et perspiciatis, veritatis sapiente id possimus tempore sed.  Aliquam in maiores rerum consequuntur? Perferendis rem blanditiis maiores nam  quaerat? 
+          
+          <span id="dots">...</span><span id="more">
+          <h2>Our Vision</h2>
+          Lorem ipsum dolor sit  amet consectetur adipisicing elit. Vel suscipit sunt hic impedit adipisci iureamet consequuntur dolorum aliquam aperiam nostrum, ullam minima est doloribus quae, obcaecati quod harum magnam?
+           
+          <h2>Our Pledge</h2>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ex ab atque iure quas, nisi dignissimos tempora voluptate ullam. Quos doloribus nam excepturi laudantium tenetur, corrupti voluptas enim repellat aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit. Autem earum aperiam sed debitis consectetur adipisicing elit. Autem earum aperiam sed debitis.
+        </span></p>
+      
+        <button onclick="myFunctions()" id="myBtn" style="font-size: .6rem; margin: 0 0 5px 0;">Read More</button>
+        </div>
+      
     </div>
     
-</div>
+
+
 <hr>
     <div class="quoted">
     <div data-aos="fade-up" class="card noHover" style="background-image: linear-gradient( blue,rgb(78, 75, 236)); width: 99.5% ;min-height:fit-content;">
@@ -343,12 +368,30 @@
             <script>
               function openNav() {
                 document.getElementById("mySidenav").style.width = "200px";
-                document.getElementById("mySidenav").style.height = "800px";
+                document.getElementById("mySidenav").style.height = "00px";
               }
               
               function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
               }
-              </script>
+           </script>
+
+           <script>
+             function myFunctions() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+           </script>
             </body>
 </html>

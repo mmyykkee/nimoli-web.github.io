@@ -22,6 +22,10 @@ body{
 	
 }
 
+.div333{
+  display: none;
+}
+
 .sidenav {
   height: fit-content;
   width: 0;
@@ -1687,11 +1691,29 @@ header  .bts{
   width: 65%;
    }
 
-
-
+   button #myBtn{
+     width: 10%;
+     font-size: .5rem;
+   }
+   #more{
+     font-size: .6rem;
+     text-align: center;
+   }
+   .div2{
+     display: none;
+   }
+  
+   .div333{
+     display: inline;
+     font-size: .6rem;
+     z-index: 999;
+     background-color: #fff;
+   }
    
-
-
+   .div333 h2{
+     font-size: .8rem;
+     background-color: #8c0ed4;
+   }
 
 
 
