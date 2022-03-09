@@ -45,7 +45,7 @@ body{
   text-decoration: none;
   font-size: 25px;
   color: #fff !important;
-  display: block;
+  display: flexbox;
   transition: 0.3s;
   
 }
@@ -1685,10 +1685,56 @@ header  .bts{
    
    height: 60px;
  }
-
+  h1{
+    font-size: .9rem;
+    text-align: center;
+  }
  .company-logo{
    height: 80%;
   width: 65%;
+   }
+#mySidenav a{
+  
+  margin-top: -150px 10px 0 0;
+  padding: 0;
+  position: relative;
+  top: -120px;
+}
+   .sidenav{
+     width: 10px;
+    top: auto;
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+    
+   }
+
+   .partnercontainer{
+     display: flex;
+     flex-direction: column;
+     margin: -20px;
+     
+   }
+
+   p{
+     font-size: .8rem;
+      margin: 10px 0 10px 0 ;
+      
+   }
+
+  #mySidenav .closebtn{
+   
+    margin-top: -85px;
+    position: relative;
+    text-align: right;
+    right: -10px;
+  }
+   span{
+     font-size: .7rem;
+     position: absolute;
+     display: flex;
+     right: 0;
+     top: 2.5rem;
    }
 
    button #myBtn{
