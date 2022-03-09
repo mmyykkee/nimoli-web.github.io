@@ -25,7 +25,7 @@ function myFunction() {
   navbar.classList.remove("sticky");
   }
 };
-var swiper = new Swiper(".mySwiper", {
+var Swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
