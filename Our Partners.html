@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <meta charset="UTF-8">
@@ -43,7 +44,7 @@
             </div>
 
             
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+      <span id="menusbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                
                     
           <body onscroll="myFunction()">
@@ -138,12 +139,14 @@
             <script src="nimoli.js"></script>
             <script>
               function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("mySidenav").style.width = "200px";
+                document.getElementById("mySidenav").style.height = "500px";
               }
               
               function closeNav() {
                 document.getElementById("mySidenav").style.width = "0";
               }
-              </script>
+           </script>
+            
     </body>
 </html>

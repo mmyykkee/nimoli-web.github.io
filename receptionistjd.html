@@ -16,8 +16,32 @@
     
         <title>Job Description</title>
         <img src="Images/Final Nimoli Logo 2.jpg" class="company-logo">
-         <div id="navbar">
-   
+
+         <div class="div5">
+      
+
+        <div class="texts">
+          <a href="courses.html" style="text-decoration: none;">
+          <span style="--delay:0.1s">R</span>
+          <span style="--delay:0.2s">e</span>
+          <span style="--delay:0.3s">g</span>
+          <span style="--delay:0.4s">i</span>
+          <span style="--delay:0.5s">s</span>
+          <span style="--delay:0.6s">t</span>
+          <span style="--delay:0.7s">e</span>
+          <span style="--delay:0.8s">r</span>
+        </a><br>
+        <a href="courses.html" style="text-decoration: none;">Learn More</a>
+        </div>
+
+        </div>
+         
+                 
+
+                            
+        </div>
+          <div id="navbar">
+              
                   <a class="active" href="index.html">Home  </a> 
                   <a href="Our Partners.html" target=""> Our Partners </a> 
                   <a href="Gallery.html"target="">Gallery</a>  </a> 
@@ -28,6 +52,20 @@
                   <a href="About Us.html" target=""> About Us  </a>
              
             </div>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="index.html">Home  </a> 
+                        <a href="Our Partners.html" target=""> Our Partners </a> 
+                        <a href="Gallery.html"target="">Gallery</a>  </a> 
+                        <a href="Careers.html" target=""> Careers   </a>
+                        <a href="Our Services.html"target=""> Our Services </a>
+                        <a href="Branches.html" target=""> Branches   </a>
+                        <a href="courses.html"target=""> Courses    </a>
+                        <a href="About Us.html" target=""> About Us  </a>
+            </div>
+
+            
+      <span id="menusbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
   
                
                     
@@ -47,6 +85,16 @@
           </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="nimoli.js"></script>
+            <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "200px";
+                document.getElementById("mySidenav").style.height = "500px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+              }
+           </script>
             <script>
               $('.btns').click(function(){
                 $(this).toggleClass("click");
