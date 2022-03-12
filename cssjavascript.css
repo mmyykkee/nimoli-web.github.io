@@ -1,292 +1,1540 @@
-<style>
-.section{
-    margin:0 ;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.slider{
-     width: 1900px;
-     height: 720px;
-     border-radius: 10px;
-     overflow: hidden;
-}
-.slide{
-    width: 500%;
-    height: 800px;
-    display: flex;
-}
-.slide input{
-display: none;
-    }
-.st{
-        width: 20%;
-        transition: 2s;
-    }
-.st img{
-        width: 1900px;
-        height: 720px;
-    }
-.nav-m{
-    position: absolute;
-    width: 1900px;
-    margin-top: -80px;
-    justify-content: center;
-    display: flex;
-}
-.m-btn{
-border: 2px solid #43df34;
-padding: 5px;
-border-radius: 10px;
-cursor: pointer;
-transition: 1s;
-position: relative;
-}
-.m-btn:not(:last-child){
-margin-right: 30px;
-    }
-.m-btn:hover{
-background-color: turquoise;
-}
-#radio1:checked ~ .first{
-margin-left: 20%;
-}
-#radio2:checked ~ .first{
-margin-left: 0%;
-}
-#radio3:checked ~ .first{
-margin-left: -20%;
-}
-#radio4:checked ~ .first{
-margin-left: -40%;
-}
-#radio4:checked ~ .first{
-margin-left: 20%;
-}
-.nav-auto{
-position: absolute;
-width: 1900px;
-margin-top: 460px;
-display: flex;
-justify-content: center;
-}
-.nav-auto div{
-border: 2px solid #43df34;
-padding: 5px;
-border-radius: 10px;
-transition: 1s;
-}
-.nav-auto div:not(:last-child){
-margin-right: 30px;
-justify-content: center;
-}
-#radio1:checked ~ .nav-auto .a-b1{
-background-color: aquamarine;
-}
-#radio2:checked ~ .nav-auto .a-b2{
-background-color: aquamarine;
-}
-#radio3:checked ~ .nav-auto .a-b3{
-background-color: aquamarine;
-}
-#radio4:checked ~ .nav-auto .a-b4{
-background-color: aquamarine;
-}
-#radio4:checked ~ .nav-auto .a-b5{
-background-color: aquamarine;
-}       
-</style>
-<script type="text/javascript">
-var counter=1;
-setInterval(function(){ 
-    document.getElementById?('radio' + counter).checked=true:
-    counter++;
-    if(counter >4){
-        counter=1;
-    }
-},5000
-)
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style>
-    
-* {
-  box-sizing: border-box;
-}
-img {
-            width: 300px;
-            border-radius: 0px;
-            margin: auto;
-            height: auto;
-            align-content: center;
-}
-#navbar{
-        width: 100%;
-      
-        }
-        nav li {
-            display:inline-block;
-            margin-right: 20px;
-            position: relative;
-            align-content: center;
-            font-size: 30px;
-            font-weight: 50px;
-        }
-        nav ul{
-            padding: 5px 0px 5px 30px;
-        }
-        nav a:hover{
-            color: red;
-        }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
+/* Media Queries */
+@media  only screen and (max-width:1600px) {
+  .holder .div5{
+    margin-left: 300px;
   }
+
+ 
+ 
+}
+@media  only screen and (min-width:1240px) {
+header .holder .company-logo{
+ height: 100%;
 }
 
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
+
+
+
+
+.row1, .row3, .row2{
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
+
+}
+
+.holder .div5{
+  margin-left: 200px;
+}
+
+.parent{
+  width: 100%;
+}
+.parent .div1 {
+ margin-left: .01rem;
+ width: 40%;}
+ .parent .swiper{
+ 
+   margin-left: 0;
+   
+   width: auto;
+ }
+
+ .parent .div1 .swiper-slide{
+   margin-left: -1px;
+   margin-bottom: -10px;
+ }
+
+ .parent .div2 h2{
+   background-color: #733FC8;
+  
+ }
+ .parent .div2 p{
+   
+   font-size: rem;
+ }
+ .quoted p {
+   font-size: 0.8rem;
+   
+ }
+.quoted {
+   width: 100%;  
+}
+
+.quoted img{
+  border-radius: 50%; 
+  width: 100px; 
+  height: 100px; 
+  text-align: left; 
+  float: left;
+       
+}
+
+
+.outerdiv{
+  width: 99.4%;
+  margin: 3px;
+  position: relative;
+}
+.innerdiv{
+  margin: -50px 0px -50px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 98.5%;
+}
+
+
+.outerdiv .innerdiv .div11{
+ 
+ width: 100%;
+}
+.outerdiv .innerdiv .div22{
+
+ width: 100%;
+}
+.outerdiv .innerdiv .div33{
+ 
+ width: 100%;
+}
+.outerdiv .innerdiv .div44{
+
+ width: 100%;
+}
+.outerdiv .innerdiv .div55{
+ 
+ width: 100%;
+}
+ .div11, .div22, .div33, .div44, .div55 {
+ 
+  width: 900px;
+  height: fit-content;
+  display: flexbox ;
+  margin: 0;
+  }
+
+ 
+
+
+}
+
+@media only  screen and (max-width:1024px) {
+  .holder .company-logo{
+    height: 100%;
+  }
+ 
+  .holder .div5{
+    margin-left: 120px;
+  }
+  header{
+    
+    font-size: 1.5rem;
+  }
+  header #navbar a{
+    font-size: 0.7rem;
+    padding: 5px;
+
+  }
+  .row1, .row3, .row2{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+   }
+   .parent{
+     width: 100%;
+   }
+   .parent .div1 {
+    margin-left: .01rem;
+    width: 40%;}
+    .parent .swiper{
+    
+      margin-left: 0;
+      
+      width: auto;
+    }
+  
+    .parent .div1 .swiper-slide{
+      margin-left: -1px;
+      margin-bottom: -10px;
+    }
+   
+    .parent .div2 h2{
+      background-color: #733FC8;
+     
+    }
+    .parent .div2 p{
+      
+      font-size: .7rem;
+    }
+    .quoted p {
+      font-size: 0.6rem;
+      
+    }
+    .quoted {
+      width: 100%;
+      height: max-content;
+      
+     
+   }
+   .outerdiv{
+     width: 99.4%;
+     margin: 3px;
+     position: relative;
+   }
+   .innerdiv{
+     margin: -50px 0px -50px 0px;
+     display: flex;
+     flex-direction: column;
+     width: 98.5%;
+   }
+   .outerdiv .innerdiv .div11{
+    
+    width: 100%;
+  }
+  .outerdiv .innerdiv .div22{
+   
+    width: 100%;
+  }
+  .outerdiv .innerdiv .div33{
+    
+    width: 100%;
+  }
+  .outerdiv .innerdiv .div44{
+   
+    width: 100%;
+  }
+  .outerdiv .innerdiv .div55{
+    
+    width: 100%;
+  }
+    .div11, .div22, .div33, .div44, .div55 {
+    
+     width: 900px;
+     height: fit-content;
+     display: flexbox ;
+     margin: 0;
+     }
+   
+    
+}
+
+@media only  screen and (max-width:768px) {
+  header{
+   width: 100%;
+  }
+   
+  header .holder a{
+  
+    font-size: 1rem;
+    top: 10px;
+      }
+  header .div4 i{
+    margin-top: 00px;
+    }
+  .company-logo{
+    width: 30%;
+    height: 30%;
+     }
+  header .holder p{
+    display: none;
+  }
+
+  header .div5{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: -100px;
+    margin-top: 480px;
+  }
+
+  hr{
+    position: relative;
+  }
+
+  header .div5 img{
+    width:  90%;
+    position: relative;
+  }
+
+  header .div5 p{
+    color: green;
+    position: absolute;
+  }
+  #navbar{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    }
+
+    #navbar a{
+      font-size: .7rem;
+      padding: 0;
+    }
+
+    h1{
+      margin: -10px;
+       }
+    .slideshow-container img{
+      width: 100%;
+    }
+    body img{
+      margin: 0 ;
+    }
+
+    body p{
+      font-size: .8rem;
+      
+    }
+    .containers .column .card{
+      background-color: #fff;
+      box-shadow: none;
+  
+    }
+    .partnercontainer .column .card img{
+      margin-left: 15px;
+    }
+
+    .featured-services .container1 img, .container2 img, .container3 img {
+      
+      margin-left: 15px;
+    }
+  
+  .parent{
+    
+    margin-right: -120px;
+  }
+  .parent .div1 {
+    margin-left: .01rem;
+    width: 40%;
+  }
+  .parent .swiper{
+    
+    margin-left: 0;
+    
+    width: auto;
+  }
+
+  .parent .div1 .swiper-slide{
+    margin-left: -1px;
+    margin-bottom: -10px;
+  }
+ 
+  .parent .div2 h2{
+    background-color: #733FC8;
+   font-size: 1rem;
+  }
+  .parent .div2 p{
+    
+    font-size: .7rem;
+  }
+ .row1, .row3, .row2{
+   background-color: #fff;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+ }
+.quoted p {
+   font-size: 0.6rem;
+   
+ }
+ .quoted {
+   width: 100%;
+   
   
 }
-</style>
-
-
-
-
-
-
-
-
-
-
-<script>
-        function myFunction() {
-          var dots = document.getElementById("dots");
-          var moreText = document.getElementById("more");
-          var btnText = document.getElementById("myBtn");
-          var btnText1 = document.getElementById("myBtn1");
-          if (dots.style.display === "none") {
-            dots.style.display = "inline";
-            btnText.innerHTML = "Read more"; 
-            moreText.style.display = "none";
-          } else {
-            dots.style.display = "none";
-            btnText.innerHTML = "Read less"; 
-            moreText.style.display = "inline";
-          }
-        }
-        </script>
-
-
-
-
-        <style>
-* {
-  box-sizing: border-box;
+.outerdiv{
+  width: 100%;
+  margin: 0;
+ 
+}
+.innerdiv{
+  margin: -50px 0px -50px 0px;
+  display: flex;
+  flex-direction: column;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-/* Float four columns side by side */
-.column {
+
+ .div11, .div22, .div33, .div44, .div55 {
+ 
+  width: 900px;
+  height: fit-content;
+  display: flexbox ;
+  margin: 0;
+  }
+
+.contactsec{
+  width: 99.6%;
+}
+.mapouter{
+  width: 102%;
+  height: 100%;
+  margin-left: -15px;
+  position: relative;
+}
+#gmap_canvas{
+  position: absolute;
+  margin-left: -10px;
+  width: 99%;
   float: left;
-  width: 25%;
-  padding: 0 10px;
-  border-bottom: 10px;
+  margin: 0;
 }
 
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#mySidenav, #menusbtn{
+  display: none;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
+}
+
+@media only  screen and (max-width:500px) {
+  header{
+    background-color: #fff;
+    margin-right: -390px;
+    height: 100px;
+    }
+
+   
+    .company-logo{
+      height: 40%;
+     width: 30% !important;
+    
+      }
+   
+   
+   
+      #mySidenav a{
+        
+        margin-top: 500px 10px 0 0;
+        padding: 0;
+        
+      }
+         .sidenav{
+           width: 1px;
+         
+           position: absolute;
+           display: flex;
+           flex-direction: column;
+          
+         }
+      
+         .partnercontainer{
+           display: flex;
+           flex-direction: column;
+           margin: -20px;
+           
+         }
+      
+         p{
+           font-size: .8rem;
+            margin: 10px 0 10px 0 ;
+            
+         }
+      
+        #mySidenav .closebtn{
+         
+          margin-top: -85px;
+          position: relative;
+          text-align: right;
+          right: -20px;
+        }
+         span{
+           font-size: .7rem;
+           
+           right: 0;
+           top: 2.5rem;
+         }
+      
+         button #myBtn{
+           width: 10%;
+           font-size: .5rem;
+         }
+         #more{
+           font-size: .6rem;
+           text-align: center;
+         }
+         .div2{
+           display: none;
+         }
+        
+         #mySidenav a{
+  
+          margin-top: -150px 10px 0 0;
+          padding: 0;
+          
+          top: -120px;
+        }
+           .sidenav{
+             width: 10px;
+            top: auto;
+             position: absolute;
+             display: flex;
+             flex-direction: column;
+            
+           }
+        
+           .partnercontainer{
+             display: flex;
+             flex-direction: column;
+             margin: -20px;
+             
+           }
+        
+           p{
+             font-size: .8rem;
+              margin: 10px 0 10px 0 ;
+              
+           }
+        
+          #mySidenav .closebtn{
+           
+            margin-top: -85px;
+            position: relative;
+            text-align: right;
+            right: 10px;
+          }
+         header span #menusbtn{
+             font-size: .2rem !important;
+           
+             right: -100px;
+             color: #00f;
+             margin-top: auto;
+           }
+        
+           button #myBtn{
+             width: 10%;
+             font-size: .5rem;
+           }
+           #more{
+             font-size: 1rem;
+             text-align: center;
+           }
+           .div2{
+             display: none;
+           }
+          
+           .div333{
+             display: block;
+             position:static;
+             font-size: 1rem !important;
+
+           }
+           
+           .div333 h2{
+             font-size: .8rem;
+             background-color: #8c0ed4;
+           }
+        
+        
+         
+         .div333 h2{
+           font-size: .8rem;
+           background-color: #8c0ed4;
+         }
+      
+      
+      
+   
+   
+   
+   
+   
+   
+      header .div4 a{
+        
+        size: 3px;
+        font-size: .6rem;
+      }
+      header .div4 i{
+        font-size: .8rem;
+        padding: 0;
+      }
+   
+       .div2{
+         
+       background-color: #fff;
+        z-index: 99;
+      }
+      .fa-quote-left{
+       
+        font-size: .5rem !important;
+      }
+   
+    hr{
+      display: none;
+    }
+    .holder .div5{
+    
+      top: 70px;
+      left: -100px;
+      width: 40%;
+      height: 20%;
+    }
+  .company-logo{
+    width: 40%;
+    height: 30%;
+    
+    }
+
+    h1{
+      font-size: 2em;
+      text-decoration-line: underline;
+      text-align: left;
+    }
+    .column{
+      height: fit-content;
+       }
+    .contactsec{
+      width: 100%;
+      
+    }
+    .holder{
+      
+      width: 100%;
+    }
+
+    .holder  .div4{
+      width: auto;
+      float: right;
+      right: 0;
+      margin-right: -00px;
+      position: absolute;
+    }
+    .parent{
+    background-color: #00f;
+    margin-right: -400px;
+    }
+    .quoted{
+      position: relative;
+    }
+    header .holder a{
+    
+      font-size: 1rem;
+      top: -10px;
+      position: relative;
+    }
+    header .div4 i{
+      margin-top: -100px;
+    }
+   
+      header .holder p{
+      display: none;
+    }
+  
+    header .div5{
+      position: absolute;
+      width: 250px;
+      height: 300px;
+      left: -100px;
+      margin-top: 320px;
+      display: none;
+    }
+  
+    hr{
+      position: relative;
+    }
+  
+    header .div5 img{
+      width:  90%;
+      position: relative;
+    }
+  
+    header .div5 p{
+      color: green;
+      position: absolute;
+    }
+    #navbar{
+      display: none;
+      width: 100%;
+    }
+  
+    .parent{
+      background-color: #fff;
+    }
+    .parent .div1 {
+      margin-left: .01rem;
+      width: 40%;
+    }
+    .parent .swiper{
+      position: relative;
+      margin-left: -25px;
+      height: -150px;
+      width: 220px;
+      flex-wrap: wrap;
+    }
+    .parent .div1 .swiper-slide{
+      margin-left: -1px;
+      margin-bottom: -10px;
+    }
+   
+    .parent .div2 h2{
+      background-color: #733FC8;
+     font-size: 1rem;
+    }
+    .parent .div2 p{
+      width: 100%;
+      font-size: .6rem;
+    }
+   .row1, .row3, .row2{
+     background-color: #fff;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  
+   }
+  .quoted p {
+     font-size: 0.4rem;
+     
+   }
+   .quoted {
+
+     width: 100%;
+     
+    
+  }
+  .outerdiv{
     width: 100%;
-    display: block;
-    margin-bottom: 30px;
+    margin: 0;
+   
+  }
+  .innerdiv{
+    margin: -50px 0px -50px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+   .div11, .div22, .div33, .div44, .div55 {
+   
+    width: 900px;
+    height: fit-content;
+    display: flexbox ;
+    margin: 0;
+    }
+  
+  .contactsec{
+    width: 99.6%;
   }
 }
 
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
+@media only  screen and (max-width:481px) {
+  header{
+    margin-right: -390px;
+    width: 100%;
+    height: 150px;
+    }
+
+    header{
+   
+      height: 60px;
+    }
+   
+    .company-logo{
+      height: 80%;
+     width: 65%;
+      }
+   
+   
+
+
+
+      h1{
+        font-size: .9rem;
+        text-align: center;
+      }
+     .company-logo{
+       height: 80%;
+      width: 65%;
+       }
+       #mySidenav{
+        max-width: max-content;
+       }
+    #mySidenav a{
+      display: flex;
+      margin-top: -150px 10px 0 0;
+      padding: 0;
+      position: relative;
+      top: -120px;
+    }
+       .sidenav{
+         width: 10px;
+        top: auto;
+         position: absolute;
+         display: flex;
+         flex-direction: column;
+        
+       }
+    
+       .partnercontainer{
+         display: flex;
+         flex-direction: column;
+         margin: -20px;
+         
+       }
+    
+       p{
+         font-size: .8rem;
+          margin: 10px 0 10px 0 ;
+          
+       }
+    
+      #mySidenav .closebtn{
+       
+        margin-top: -85px;
+        position: relative;
+        text-align: right;
+        right: -10px;
+      }
+       span{
+         font-size: .7rem;
+         position: absolute;
+         display: flex;
+         right: 0;
+         top: 2.5rem;
+       }
+    
+       button #myBtn{
+         width: 10%;
+         font-size: .5rem;
+       }
+       #more{
+         font-size: .6rem;
+         text-align: center;
+       }
+       .div2{
+         display: none;
+       }
+      
+       .div333{
+         display: inline;
+         font-size: .6rem;
+         z-index: 999;
+         background-color: #fff;
+       }
+       
+       .div333 h2{
+         font-size: .8rem;
+         background-color: #8c0ed4;
+       }
+    
+
+
+
+
+   
+      
+      header .div4 a{
+        
+        size: 3px;
+        font-size: .6rem;
+      }
+      header .div4 i{
+        font-size: .8rem;
+        padding: 0;
+      }
+   
+       .div2{
+       background-color: #fff;
+        z-index: 99;
+      }
+      .fa-quote-left{
+       
+        font-size: .5rem !important;
+      }
+   
+    
+    hr{
+      display: none;
+    }
+
+    .holder{
+      margin-top: -30px;
+      width: 52%;
+      
+    }
+
+    .holder .div5{
+      
+      top: 70px;
+      left: -100px;
+      width: 40%;
+      height: 20%;
+    }
+
+    .holder .div4{
+      right:0 ;
+      margin-right: 0px;
+      margin-top: 40px;
+      z-index: 99;
+      background-color: #fff;
+    }
+  .company-logo{
+    margin-top: 10px;
+    
+    width: 40%; 
+    }
+    .contactsec{
+      width: 100%;
+      
+    }
+    .parent{
+    background-color: #00f;
+    margin-right: -400px;
+    }
+    .quoted{
+      position: relative;
+    }
+    header .holder a{
+    
+      font-size: 1rem;
+      top: -10px;
+      position: relative;
+    }
+    header .div4 i{
+      margin-top: -100px;
+    }
+  
+    header .holder p{
+      display: none;
+    }
+  
+    header .div5{
+      position: absolute;
+      width: 250px;
+      height: 300px;
+      left: -100px;
+      margin-top: 320px;
+      display: none;
+    }
+  
+    hr{
+      position: relative;
+    }
+  
+    header .div5 img{
+      width:  90%;
+      position: relative;
+    }
+  
+    header .div5 p{
+      color: green;
+      position: absolute;
+    }
+    #navbar{
+      display: none;
+      width: 100%;
+    }
+  
+    .parent{
+      background-color: #fff;
+    }
+    .parent .div1 {
+      margin-left: .01rem;
+      width: 40%;
+    }
+    .parent .swiper{
+      position: relative;
+      margin-left: -25px;
+      height: -150px;
+      width: 220px;
+      flex-wrap: wrap;
+    }
+    .parent .div1 .swiper-slide{
+      margin-left: -1px;
+      margin-bottom: -10px;
+    }
+   
+    .parent .div2 h2{
+      background-color: #733FC8;
+     font-size: 1rem;
+    }
+    .parent .div2 p{
+      width: 100%;
+      font-size: .6rem;
+    }
+   .row1, .row3, .row2{
+     background-color: #fff;
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  
+   }
+  .quoted p {
+     font-size: 0.4rem;
+     
+   }
+   .quoted {
+
+     width: 100%;
+     
+    
+  }
+  .outerdiv{
+    width: 100%;
+    margin: 0;
+   
+  }
+  .innerdiv{
+    margin: -50px 0px -50px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+   .div11, .div22, .div33, .div44, .div55 {
+   
+    width: 900px;
+    height: fit-content;
+    display: flexbox ;
+    margin: 0;
+    }
+  
+  .contactsec{
+    width: 99.6%;
+  }
+
+  .mapouter{
+    background-color: red;
+    width: 350px;
+    height: 600px;
+    position: relative;
+  }
+  #gmap_canvas{
+    background-color: green;
+    width: 325px;
+    float: left;
+    margin: 0;
+  }
 }
-p{
-    line-height: 30px;
+
+@media only screen and (max-width:415px) {
+header  .bts{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-left: 100px;
+  }
+  header{
+   
+    height: 60px;
+  }
+   
+ body{
+  
+   margin-top: 60px;
+   width: 100%;
+ }
+ h1,p{
+   
+   margin-top: 0px;
+ }
+
+ .company-logo{
+   margin-top: -30px;
+   position: absolute;
+   max-height: 20% !important;
+   min-width: 30% !important;
+   
+ }
+
+       h2{
+        font-size: .9rem;
+        text-align: center;
+      }
+     
+       #menusbtn{
+        position: absolute;
+        border-color: red;
+       right: 0;
+        margin-top: 10px;
+       display: block;
+       font-size: 3em;
+      }
+      
+      .sidenav{
+        width:100px;
+        margin-top: 90px;
+      
+      }
+      #mySidenav{
+        display: flex;
+        max-width: max-content;
+        z-index: 99998;
+        background-color: #00f;
+        line-height: .5rem;
+        border-radius: 15px;
+        
+      }
+      #mySidenav a{
+       font-size: .7rem;
+       top: 60px;
+      }
+      #mySidenav .closebtn{
+        top: 70px;
+        right: -20px !important;
+        font-size: 1.8rem;
+       }
+      
+      .quoted img{
+        
+        height: 30%;
+        width: 20%;
+        border-radius: 50%;
+        float: left;
+        
+      }
+      
+      .realp{
+        font-size: .8rem;
+      }
+      
+      .div11,.div22,.div33,.div44,.div55{
+       
+        height: fit-content;
+      }
+      .innerdiv{
+        height: fit-content;
+      }
+      
+      
+         .partnercontainer{
+           display: flex;
+           flex-direction: column;
+           margin: -20px;
+           
+         }
+      
+         p{
+           font-size: .7rem;
+            margin: 10px 0 10px 0 ;
+            
+         }
+      
+        #mySidenav .closebtn{
+         
+          margin-top: -85px;
+          position: relative;
+          text-align: right;
+          right: -10px;
+        }
+         span{
+           font-size: .7rem;
+           
+           right: 0;
+           top: 2.5rem;
+         }
+      
+         button #myBtn{
+           width: 10%;
+           font-size: .5rem;
+         }
+         #more{
+           font-size: .6rem;
+           text-align: center;
+         }
+         .div2{
+           display: none;
+         }
+        
+         .div333{
+           display: block;
+           
+         }
+         
+         .div333 h2{
+           font-size: .8rem;
+           background-color: #8c0ed4;
+         }
+      
+      
+ .brainstormed{
+   width: 98%;
+ }
+ 
+ 
+ 
+ 
+    header .div4 a{
+      
+      size: 3px;
+      font-size: .6rem;
+    }
+    header .div4 i{
+      font-size: .8rem;
+      padding: 0;
+    }
+ 
+    header .div2{
+       background-color: red;
+       position: absolute;
+       top: -10px;
+      background-color: #fff;
+      z-index: 99;
+    }
+    .fa-quote-left{
+     
+      font-size: .5rem !important;
+    }
+    .div333 p{
+    
+      font-size: .6em;
+      z-index: 999;
+      background-color: #fff;
+     
+    }
+    
+    .div333 h2{
+      font-size: .6rem;
+      background-color: #8c0ed4;
+    }
+ 
+    .parent{
+     
+      height: 25vh;
+        }
+ 
+      .div2-2 p{
+        font-size: .6em;
+      }  
+ 
+      .div2-2 h2{
+        font-size: .8rem;
+        background-color: #8c0ed4;
+      }
+ 
+ 
+    .div333{
+      
+      height: fit-content;
+    }
+header .div4{
+  position: absolute;
+  color: red;
+  top: 2px;
 }
-#more{
+    header .div4 a{
+      
+      size: 3px;
+      font-size: .6rem;
+    }
+    header .div4 i{
+      font-size: .8rem;
+      padding: 0;
+    }
+ 
+     .div2{
+     background-color: #fff;
+      z-index: 99;
+    }
+    .fa-quote-left{
+     
+      font-size: .5rem !important;
+    }
+ 
+ 
+    .outerdiv  p{
+     
+     font-size: .7rem;
+ 
+ 
+   }
+
+   .contactsec{
+     width: 98%;
+     
+   }
+   .contactsec a,i{
+     font-size: .7rem;
+     padding: 5px;
+   }
+   .title{
+     margin-top: 40px;
+   }
+
+ }
+
+
+@media only  screen and (max-width:376px) {
+ header{
+   
+   height: 60px;
+ }
+  h1{
+    margin-top: 50px;
+    font-size: .9rem;
+    text-align: center;
+  }
+ .company-logo{
+   top: 40px;
+   height: 30% !important;
+  width: 30% !important;
+  
+   }
+
+#menusbtn{
+
+  position: absolute;
+ right: 0px;
+  margin-top: 10px;
+ display: block;
+ font-size: 3em;
+}
+
+
+#mySidenav{
+  margin-top: -60px;
+  display: flex;
+  max-width: max-content;
+  background-color: #00f;
+  line-height: .5rem;
+  border-radius: 15px;
+  
+}
+#mySidenav a{
+ font-size: .7rem;
+ top: 60px;
+}
+#mySidenav .closebtn{
+  top: 70px;
+  right: -20px;
+  font-size: 1.8rem;
+ }
+
+.quoted img{
+  background-color: red;
+  height: 30%;
+  width: 20%;
+  border-radius: 50%;
+  float: left;
+  
+}
+
+.realp{
+  font-size: .8rem;
+}
+
+.div11,.div22,.div33,.div44,.div55{
+ 
+  height: fit-content;
+}
+.innerdiv{
+  height: fit-content;
+}
+
+   .partnercontainer{
+     display: flex;
+     flex-direction: column;
+     margin: -20px;
+     
+   }
+
+   p{
+     font-size: .8rem;
+      margin: 10px 0 10px 0 ;
+      
+   }
+
+  
+  
+   
+   .div2{
+     display: none;
+   }
+  
+   .div333 p{
+    
+     font-size: .6em;
+     z-index: 999;
+     background-color: #fff;
+    
+   }
+   
+   .div333 h2{
+     font-size: .6rem;
+     background-color: #8c0ed4;
+   }
+
+   .parent{
+    
+     height: 25vh;
+       }
+
+     .div2-2 p{
+       font-size: .6em;
+     }  
+
+     .div2-2 h2{
+       font-size: .8rem;
+       background-color: #8c0ed4;
+     }
+
+
+   .div333{
+     margin-top: -50px;
+     height: fit-content;
+   }
+
+   .div2-2{
+     margin-top: -70px;
+   }
+
+   .swiper{
+     margin-top: -60px;
+   }
+
+   header .div4 a{
+     
+     size: 3px;
+     font-size: .6rem;
+   }
+   header .div4 i{
+     font-size: .8rem;
+     padding: 0;
+   }
+
+    .div2{
+    background-color: #fff;
+     z-index: 99;
+   }
+   .fa-quote-left{
+    
+     font-size: .5rem !important;
+   }
+
+
+   .outerdiv  p{
+    
+    font-size: .7rem;
+
+
+  }
+  .contactsec a,i{
+    font-size: .7rem;
+    padding: 5px;
+  }
+}
+@media only  screen and (max-width:320px) {
+  header{
+    height: 90px;
+  }
+
+  .company-logo{
+    background-color: red;
+    position: absolute;
+    top: -2000px;
+  }
+
+  header .holder a{
+    
+    font-size: 1rem;
+    top: -10px;
+    position: relative;
+  }
+  header .div4 i{
+    margin-top: -100px;
+  }
+  header .holder .company-logo{
+    margin-top: 2px;
+    width: 150px;
+  
+  }
+  header .holder p{
     display: none;
+  }
+
+  header .div5{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: -100px;
+    margin-top: 320px;
+  }
+
+  hr{
+    position: absolute;
+  }
+
+  header .div5 img{
+    width:  90%;
+    position: relative;
+  }
+
+  header .div5 p{
+    color: green;
+    position: absolute;
+  }
+  #navbar{
+    display: none;
+    width: 100%;
+  }
+
+  .parent{
+    
+    margin-right: -120px;
+  }
+  .parent .div1 {
+    margin-left: .01rem;
+    width: 40%;
+  }
+  .parent .swiper{
+    
+    margin-left: -25px;
+    height: -150px;
+    width:200px;
+  }
+
+  .parent .div1 .swiper-slide{
+    margin-left: -1px;
+    margin-bottom: -10px;
+  }
+ 
+  .parent .div2 h2{
+    background-color: #733FC8;
+   font-size: .8rem;
+  }
+  .parent .div2 p{
+    
+    font-size: .5rem;
+  }
+ .row1, .row3, .row2{
+   background-color: #fff;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+ }
+.quoted p {
+   font-size: 0.6rem;
+   
+ }
+ .quoted {
+   width: 100%;
+   
+  
 }
-nav li {
-            display:inline-block;
-            margin-right: 20px;
-            position: relative;
-            align-content: center;
-        }
-        nav ul{
-            padding: 5px 0px 5px 30px;
-        }
-        nav a:hover{
-            color: red;
-        }
-        div {
-            margin: auto;
-        }
-</style>
+.outerdiv{
+  width: 100%;
+  margin: 0;
+ 
+}
+.innerdiv{
+  margin: -50px 0px -50px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+ .div11, .div22, .div33, .div44, .div55 {
+ 
+  width: 900px;
+  height: fit-content;
+  display: flexbox ;
+  margin: 0;
+  }
+
+.contactsec{
+  width: 99.6%;
+}
+
+
+
+}
