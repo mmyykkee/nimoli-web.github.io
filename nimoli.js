@@ -26,10 +26,10 @@ function myFunction() {
   }
 };
 var Swiper = new Swiper(".mySwiper", {
-  spaceBetween: 3,
+  spaceBetween: 2,
   centeredSlides: true,
   autoplay: {
-    delay: 1,
+    delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
