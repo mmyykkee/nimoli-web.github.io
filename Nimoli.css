@@ -774,8 +774,11 @@ header .btn {
 
 .mapouter {
   max-height: 450px;
+  }
+.gmap_canvas{
+  background: none;
+  position: relative;
 }
-
 .brainstormed {
   width: 400px;
   height: 300px;
