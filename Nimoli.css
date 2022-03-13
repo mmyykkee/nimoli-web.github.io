@@ -422,6 +422,18 @@ h3 {
   margin-right: 0;
   text-align: right;
 }
+.div4-1{
+  grid-area: 2 / 4 / 4 / 3;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  text-align: right;
+}
+
+.div4-1 img{
+  width: 10%;
+  height: 90%;
+}
 
 .div4 .fas {
   text-align: right;
@@ -472,12 +484,12 @@ a:hover {
   transform: scale(0.9);
   margin: 1rem;
   display: grid;
-  grid-gap: 1.5rem;
-  grid-template-rows: repeat(1, 22rem);
-  grid-template-columns: repeat(1, 17rem);
+  grid-gap: .6rem;
+  grid-template-rows: repeat(1, 28rem);
+  grid-template-columns: repeat(1, 12rem);
 }
 .eachdiv {
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 0.8rem;
   box-shadow: 5px 5px 20px #1f03036b;
   color: red;
@@ -544,6 +556,8 @@ a:hover {
 }
 .userdetails {
   display: flex;
+  position: relative;
+ 
 }
 .imgbox {
   margin-right: 1rem;
@@ -1005,6 +1019,23 @@ header .btn {
   
 }
 
+.texts{
+   
+  position: absolute;
+  width: max-content;
+ margin-left: 1cm;
+   }
+
+   .swiper-slide{
+    top: -80px;
+    left: -60px;
+    background-size: cover;
+  }
+
+  .div333 p{
+    line-height: .8cm;
+  }
+
 h1{
   font-size: 2rem;
 }
@@ -1033,6 +1064,23 @@ h1{
     width: auto;
     height: 450px;
   }
+
+  .outerdiv,.quoted{
+    width: 100%;
+  }
+
+  .innerdiv{
+    width: 100%;
+    margin-left: -10px;
+  }
+  .innerdiv .eachdiv{
+    padding: 2rem;
+    margin-left: -15px;
+    width: 14rem;
+    
+  
+}
+
 
   h2 {
     font-size: 1.1rem;
