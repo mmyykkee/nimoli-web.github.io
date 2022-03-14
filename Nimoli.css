@@ -787,8 +787,10 @@ header .btn {
 
 .mapouter {
   max-height: 450px;
+  max-width: 1000px;
 }
 .gmap_canvas {
+  
   background: none;
   position: relative;
 }
@@ -1313,8 +1315,8 @@ header .btn {
   }
   .innerdiv .eachdiv {
     padding: 2rem;
-    margin-left: -6px;
-    width: 10rem;
+    margin-left: 15px;
+    width: 12rem;
     height: fit-content;
     padding-bottom: -10px;
   }
@@ -1391,5 +1393,8 @@ header .btn {
     grid-template-rows: repeat(1, 1fr);
     height: fit-content;
   }
-
+  .gmap_canvas{
+    background-color: red;
+    max-width: 430px;
+  }
 }
