@@ -98,7 +98,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: auto;
   text-align: center;
 }
 h4 {
@@ -422,7 +422,7 @@ h3 {
   margin-right: 0;
   text-align: right;
 }
-.div4-1{
+.div4-1 {
   grid-area: 2 / 4 / 4 / 3;
   width: 100%;
   float: right;
@@ -430,7 +430,7 @@ h3 {
   text-align: right;
 }
 
-.div4-1 img{
+.div4-1 img {
   width: 10%;
   height: 90%;
 }
@@ -484,7 +484,7 @@ a:hover {
   transform: scale(0.9);
   margin: 1rem;
   display: grid;
-  grid-gap: .6rem;
+  grid-gap: 0.6rem;
   grid-template-rows: repeat(1, 28rem);
   grid-template-columns: repeat(1, 12rem);
 }
@@ -557,7 +557,6 @@ a:hover {
 .userdetails {
   display: flex;
   position: relative;
- 
 }
 .imgbox {
   margin-right: 1rem;
@@ -788,8 +787,8 @@ header .btn {
 
 .mapouter {
   max-height: 450px;
-  }
-.gmap_canvas{
+}
+.gmap_canvas {
   background: none;
   position: relative;
 }
@@ -857,23 +856,21 @@ header .btn {
 }
 
 @media (max-width: 1024px) {
-.holder{
-  background-color: #fff;
-}
+  .holder {
+    background-color: #fff;
+  }
 
-.company-logo{
-  width: 20%;
-}
-.div5{
- 
-  margin-left: auto;   
-}
-  .texts{
-   
+  .company-logo {
+    width: 20%;
+  }
+  .div5 {
+    margin-left: auto;
+  }
+  .texts {
     position: absolute;
     width: max-content;
-   margin-left: 4cm;
-     }
+    margin-left: 4cm;
+  }
 
   #navbar {
     margin: 10px 5px 0 5px;
@@ -883,7 +880,7 @@ header .btn {
   #navbar a {
     padding: 0;
   }
-  #navbar a:visited{
+  #navbar a:visited {
     background-color: #fff;
   }
   .swiper {
@@ -891,44 +888,42 @@ header .btn {
     width: 100%;
     height: fit-content;
   }
-  .swiper-slide{
+  .swiper-slide {
     top: -90px;
     left: -60px;
     background-size: cover;
   }
 
-  .div1{
+  .div1 {
     width: 50%;
     float: left;
   }
 
- 
-
-.div2{
-  display: none;
-}
-.div333{
-  display: block;
-}
-.div333 h2 {
-  background-color: red;
-  font-size: 1rem;
-  position: relative;
-  width: 80%;
-}
-.div333 p{
-  font-size: 1rem;
-  line-height: 1cm;
-}
-.div2-2{
-  display: block;
-}
-.div2-2 h2{
-  background-color: red;
-}
-.div2-2 p{
-  line-height: 1cm;
-}
+  .div2 {
+    display: none;
+  }
+  .div333 {
+    display: block;
+  }
+  .div333 h2 {
+    background-color: rgb(54, 103, 238);
+    font-size: 1rem;
+    position: relative;
+    width: 80%;
+  }
+  .div333 p {
+    font-size: 1rem;
+    line-height: 1cm;
+  }
+  .div2-2 {
+    display: block;
+  }
+  .div2-2 h2 {
+    background-color: rgb(54, 103, 238);
+  }
+  .div2-2 p {
+    line-height: 1cm;
+  }
   .partnercontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -985,67 +980,68 @@ header .btn {
     position: relative;
     margin-left: 17rem;
   }
-  .container3 .row3, .container2 .row2, .container1 .row1 {
+  .container3 .row3,
+  .container2 .row2,
+  .container1 .row1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-columns: repeat(3, 0.5fr);
     grid-template-rows: repeat(2, 1fr);
     height: fit-content;
-  
   }
   .row1 .column {
     margin: 0 -10px 1px;
   }
 
-  .row2 .column,.row3 .column{
+  .row2 .column,
+  .row3 .column {
     margin: 0 -10px 1px;
   }
 
-  .row3 .column{
+  .row3 .column {
     margin: 0 -10px 1px;
   }
-  .row1 .column p,.row2 .column p,.row3 .column p{
-    font-size: .9rem;
+  .row1 .column p,
+  .row2 .column p,
+  .row3 .column p {
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 800px) {
+  #navbar {
+    width: 100%;
+  }
 
-#navbar{
-  width: 100%;
-}
+  #navbar a {
+    font-size: 0.7rem;
+  }
 
-#navbar a{
-  font-size: .7rem;
-  
-}
+  .texts {
+    position: absolute;
+    width: max-content;
+    margin-left: 1cm;
+  }
 
-.texts{
-   
-  position: absolute;
-  width: max-content;
- margin-left: 1cm;
-   }
-
-   .swiper-slide{
+  .swiper-slide {
     top: -80px;
     left: -60px;
     background-size: cover;
   }
 
-  .div333 p{
-    line-height: .8cm;
+  .div333 p {
+    line-height: 0.8cm;
   }
 
-h1{
-  font-size: 2rem;
-}
-  .contactsec a{
-    padding: -5px;
-    font-size: .7rem;
+  h1 {
+    font-size: 2rem;
   }
-  .contactsec i{
+  .contactsec a {
+    padding: -5px;
+    font-size: 0.7rem;
+  }
+  .contactsec i {
     padding: -2px;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .partnercontainer {
@@ -1055,9 +1051,18 @@ h1{
     grid-template-rows: repeat(2, 1fr);
     height: fit-content;
   }
-  .partnercontainer .column{
-    margin: 0 -2px;
-      }
+  .partnercontainer .column  .card{
+    max-width: 5px;
+    max-height: min-content;
+    margin: 0px;
+  }
+  .partnercontainer p{
+    font-size: 1rem;
+
+  }
+  .partnercontainer .card{
+    height: fit-content;
+  }
   .slideshow-container img {
     position: absolute;
     left: 2.7em;
@@ -1065,22 +1070,20 @@ h1{
     height: 450px;
   }
 
-  .outerdiv,.quoted{
+  .outerdiv,
+  .quoted {
     width: 100%;
   }
 
-  .innerdiv{
+  .innerdiv {
     width: 100%;
     margin-left: -10px;
   }
-  .innerdiv .eachdiv{
+  .innerdiv .eachdiv {
     padding: 2rem;
     margin-left: -15px;
     width: 14rem;
-    
-  
-}
-
+  }
 
   h2 {
     font-size: 1.1rem;
@@ -1088,7 +1091,6 @@ h1{
 
   /* Slideshow container */
   .slideshow-container {
-   
     align-items: center;
     width: 97.5%;
     height: 500px;
@@ -1107,30 +1109,34 @@ h1{
     position: relative;
     margin-left: 11rem;
   }
-  .container3 .row3, .container2 .row2, .container1 .row1 {
+  .container3 .row3,
+  .container2 .row2,
+  .container1 .row1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-columns: repeat(2, 0.5fr);
     grid-template-rows: repeat(2, 1fr);
     height: fit-content;
-  
   }
   .row1 .column {
     margin: 0 -10px 5px;
   }
 
-  .row2 .column,.row3 .column{
+  .row2 .column,
+  .row3 .column {
     margin: 0 -10px 5px;
   }
 
-  .row3 .column{
+  .row3 .column {
     margin: 0 -10px 5px;
   }
-  .row1 .column p,.row2 .column p,.row3 .column p{
-    font-size: .9rem;
+  .row1 .column p,
+  .row2 .column p,
+  .row3 .column p {
+    font-size: 0.9rem;
   }
 
-  .containers .column{
+  .containers .column {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-columns: repeat(2, 0.5fr);
@@ -1140,27 +1146,250 @@ h1{
 }
 
 @media (max-width: 500px) {
-  .company-logo{
-    width: 25%;
-    }
-  #navbar{
-   
-    margin-left: -10px;
-    right: -100px;
+  .holder {
+    margin-left: -20px;
   }
-  #navbar a{
-    font-size: .35rem;
-      }
+
+  .company-logo {
+    width: 25%;
+    margin-left: auto;
+  }
+  .div5 {
+    align-items: left;
+    margin-left: -30px;
+  }
+
+  .div5 .texts span {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .div4 p {
+    font-size: 0.7rem;
+    font-weight: bolder;
+  }
+
+  .div4 a,
+  i {
+    padding: 0 -6px;
+    font-size: 0.7rem;
+  }
+
+  #navbar {
+    margin-left: -20px;
+    width: 100%;
+  }
+  #navbar a {
+    font-size: 0.3rem;
+    padding: -1rem;
+    width: auto;
+  }
+  .div1 {
+    width: 50%;
+    
+    margin-left: -15px;
+  }
+
+  .div1 .image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+    bottom: auto;
+  }
+  .container {
+    
+    height: auto;
+  }
+
+  .card-content .image1 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 110px;
+  }
+
+  .card-content .image2 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 90px;
+  }
+
+  .card-content .image3 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 70px;
+  }
+
+  .card-content .image4 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 50px;
+  }
+  .card-content .image5 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 30px;
+  }
+
+  .card-content .image6 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 10px;
+  }
+  .card-content .image7 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: -10px;
+  }
+  .card-content .image8 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: -30px;
+  }
+  .card-content .image9 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: -50px;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .mySwiper {
+    width: 200px;
+  }
+
+  .div333 {
+    
+    width: 50%;
+    height: fit-content;
+    margin-right: 0px;
+  }
+
+  .div333 p {
+    font-size: 0.7rem;
+    padding: 0;
+    line-height: 0.5cm;
+     }
   .partnercontainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-columns: repeat(1, 0.5fr);
     grid-template-rows: repeat(2, 1fr);
-    }
-  h1{
+  }
+  h1 {
     font-size: 2rem;
   }
-  p{
-    font-size: .9rem;
+  p {
+    font-size: 0.9rem;
   }
+  .quoted p {
+    font-size: 0.6rem;
+  }
+  .div2-2{
+    
+    margin-top: -60px;
+    width: 95%;
+  }
+  .div2-2 p {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+  }
+  .left-align {
+    width: 10%;
+    height: 10%;
+  }
+  .outerdiv,
+  .quoted {
+    width: 100%;
+  }
+
+  .innerdiv {
+    width: 100%;
+    margin-left: -10px;
+    padding: 2px;
+  }
+  .innerdiv .eachdiv {
+    padding: 2rem;
+    margin-left: -6px;
+    width: 10rem;
+    height: fit-content;
+    padding-bottom: -10px;
+  }
+
+  .userdetails{
+   
+    width: fit-content;
+    margin-left: -20px;
+  }
+
+  .eachdiv p{
+    font-size: .8rem;
+  }
+  .div33{
+    display:none;
+  }
+  .slideshow-container{
+    margin: 0;
+    margin-left: -60px;
+  }
+  .slideshow-container img{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .next {
+    right: -5.5rem;
+  }
+
+  .prev {
+    left: 1.2rem;
+  }
+  .brainstormed{
+    margin: auto;
+  }
+  .container3 .row3,
+  .container2 .row2,
+  .container1 .row1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(1, 0.5fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: fit-content;
+  }
+  .row1 .column {
+    margin: 0 -10px 5px;
+  }
+
+  .row2 .column,
+  .row3 .column {
+    margin: 0 -10px 5px;
+  }
+
+  .row3 .column {
+    margin: 0 -10px 5px;
+  }
+  .row1 .column p,
+  .row2 .column p,
+  .row3 .column p {
+    font-size: 0.9rem;
+  }
+
+  .title a{
+    
+    font-size: 1.4rem;
+    font-weight: 900;
+  }
+
+  .containers .column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(1, 0.5fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: fit-content;
+  }
+
 }
