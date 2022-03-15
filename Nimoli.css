@@ -1058,14 +1058,16 @@ header .btn {
     object-fit: contain;
   }
 
-  .div5{
+  .div5 {
     transform: scale(1.25);
   }
 }
-@media (max-width: 1300px){
-  .div1{
+
+@media (max-width: 1300px) {
+  .div1 {
     width: 60%;
   }
+
   .card-content .image1 {
     margin-top: 40px;
     padding: auto;
@@ -1119,6 +1121,7 @@ header .btn {
     padding: auto;
     margin-left: 70px;
   }
+
   .partnercontainer {
     transform: scale(.8);
     margin-left: -50px;
@@ -1129,6 +1132,7 @@ header .btn {
     grid-template-rows: repeat(2, 30rem);
     grid-template-columns: repeat(4, 18rem)
   }
+
   .container3 .row3,
   .container2 .row2,
   .container1 .row1 {
@@ -1139,20 +1143,21 @@ header .btn {
     grid-template-columns: repeat(4, 17rem)
   }
 
-  .slideshow-container{
+  .slideshow-container {
     width: 100%;
     margin-left: -350px;
   }
 
-  .next{
+  .next {
     margin-right: -600px;
   }
 
-  .div5{
+  .div5 {
     transform: scale(1.25);
     margin-left: 200px;
   }
 }
+
 @media (max-width: 1024px) {
   .holder {
     background-color: #fff;
@@ -1301,6 +1306,7 @@ header .btn {
   .container2 .row2,
   .container1 .row1 {
     display: grid;
+    margin: 0;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-columns: repeat(3, 0.5fr);
     grid-template-rows: repeat(2, 1fr);
@@ -1311,13 +1317,13 @@ header .btn {
     margin: 0 -10px 1px;
   }
 
-  .row2 .column,
-  .row3 .column {
-    margin: 0 -10px 1px;
+  .row2 .column
+ {
+    margin: 0 -20px 1px;
   }
 
   .row3 .column {
-    margin: 0 -10px 1px;
+    margin: 0 -20px 1px;
   }
 
   .row1 .column p,
@@ -1347,10 +1353,12 @@ header .btn {
     left: -60px;
     background-size: cover;
   }
-  .swiper-slide img{
+
+  .swiper-slide img {
     width: 300px;
     height: 280px;
   }
+
   .div333 p {
     line-height: 0.8cm;
   }
@@ -1438,7 +1446,7 @@ header .btn {
   }
 
   .next {
-    right: 0rem;
+    margin-right: -130px;
   }
 
   .prev {
@@ -1454,6 +1462,7 @@ header .btn {
   .container2 .row2,
   .container1 .row1 {
     display: grid;
+    margin: 0;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-columns: repeat(2, 0.5fr);
     grid-template-rows: repeat(2, 1fr);
@@ -1487,12 +1496,13 @@ header .btn {
     height: fit-content;
   }
 
-  .div5{
+  .div5 {
     transform: scale(.8);
   }
 }
+
 @media (max-width: 700px) {
-  
+
   #navbar {
     width: 100%;
   }
@@ -1512,10 +1522,12 @@ header .btn {
     left: -60px;
     background-size: cover;
   }
-  .swiper-slide img{
+
+  .swiper-slide img {
     width: 300px;
     height: 280px;
   }
+
   .div333 p {
     line-height: 0.8cm;
   }
@@ -1652,10 +1664,11 @@ header .btn {
     height: fit-content;
   }
 
-  .div5{
+  .div5 {
     transform: scale(.8);
   }
-  .div33{
+
+  .div33 {
     display: none;
   }
 
@@ -1722,16 +1735,19 @@ header .btn {
     height: 100%;
     margin-left: -60px;
   }
-.slideshow-container img{
-  width: 80%;
-  height: auto;
-}
-.next{
-  margin-right: -0px;
-}
+
+  .slideshow-container img {
+    width: 80%;
+    height: auto;
+  }
+
+  .next {
+    margin-right: -0px;
+  }
 
 
 }
+
 @media (max-width: 600px) {
   .div33 {
     display: none;
@@ -1755,13 +1771,13 @@ header .btn {
   .brainstormed {
     margin: auto;
   }
-  
+
   .swiper img {
-    
+
     height: 300px;
     width: 280px;
     object-fit: contain;
-  } 
+  }
 
   .card-content .image1 {
     z-index: 999;
@@ -1881,9 +1897,10 @@ header .btn {
     grid-template-columns: repeat(2, rem);
 
   }
-.div5{
-  transform: scale(.6);
-}
+
+  .div5 {
+    transform: scale(.6);
+  }
 }
 
 @media (max-width: 500px) {
@@ -2028,7 +2045,7 @@ header .btn {
   .mySwiper {
     align-content: flex-start;
     width: 270px;
-    
+
   }
 
   .div333 {
@@ -2296,7 +2313,7 @@ header .btn {
   }
 
   #navbar {
-    background-color: grey;
+    background-color: blue;
     width: 110% !important;
   }
 }
