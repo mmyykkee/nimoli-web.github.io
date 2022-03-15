@@ -956,8 +956,17 @@ header .btn {
 #menusbtn {
   display: none;
 }
+.div2 h2{
+  background-color: #2946eb;
+  color: #fff;
+}
+
+.div2,ol{
+  line-height: 1.2rem;
+}
 
 @media (max-width: 1600px) {
+  
   .mySwiper {
     width: 100%;
     margin-left: -50px;
@@ -1031,6 +1040,7 @@ header .btn {
 }
 
 @media (min-width: 1400px) {
+
   .div1 {
     width: 50%;
   }
@@ -1064,6 +1074,7 @@ header .btn {
 }
 
 @media (max-width: 1300px) {
+  
   .div1 {
     width: 60%;
   }
