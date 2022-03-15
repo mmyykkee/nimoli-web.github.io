@@ -1946,7 +1946,7 @@ header .btn {
   }
 
   .div1 {
-    width: 70%;
+    width: 50%;
 
     margin-left: -15px;
   }
@@ -1961,6 +1961,15 @@ header .btn {
 
   .container {
     height: auto;
+  }
+
+  .mySwiper{
+    transform: scale(.6);
+  }
+
+  .swiper{
+    left: -30px;
+    margin-top: -80px;
   }
 
   .card-content .image1 {
@@ -2049,7 +2058,7 @@ header .btn {
   }
 
   .div333 {
-    width: 70%;
+    width: 90%;
     height: fit-content;
     margin-top: -15px;
     text-align: left;
@@ -2222,6 +2231,108 @@ header .btn {
     font-size: .21rem;
   }
 
+  .div1{
+    width: 50%;
+  }
+
+  .swiper-slide {
+    
+    width: 60%;
+    height: 80%;
+    object-fit: contain;
+  }
+
+  .mySwiper {
+    
+    align-content: flex-start;
+    width: 260px;
+
+  }
+
+  .mySwiper{
+    transform: scale(.6);
+  }
+
+  .swiper{
+    left: -30px;
+    margin-top: -80px;
+  }
+
+  .card-content .image1 img{
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: contain;
+    margin-top: 80px !important;
+    padding: auto;
+    margin-left: 20px;
+  }
+
+  .card-content .image2 img{
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: contain;
+    margin-top: 80px !important;
+    padding: auto;
+    margin-left: 30px;
+  }
+  .card-content .image3 img{
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: contain;
+    margin-top: 80px !important;
+    padding: auto;
+    margin-left: 40px;
+  }
+  .card-content .image4 img{
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: contain;
+    margin-top: 80px !important;
+    padding: auto;
+    margin-left: 50px;
+  }
+  .card-content .image5 img{
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: contain;
+    margin-top: 80px !important;
+    padding: auto;
+    margin-left: 60px;
+  }
+  .card-content .image6 img{
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: contain;
+    margin-top: 80px !important;
+    padding: auto;
+    margin-left: 80px;
+  }
+  .card-content .image7 img{
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: contain;
+    margin-top: 80px !important;
+    padding: auto;
+    margin-left: 90px;
+  }
+  .card-content .image8 img{
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: contain;
+    margin-top: 80px !important;
+    padding: auto;
+    margin-left: 100px;
+  }
+  .card-content .image9 img{
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: contain;
+    margin-top: 80px !important;
+    padding: auto;
+    margin-left: 110px;
+  }
+
+  
   .div5 span {
     font-size: .1rem;
   }
@@ -2243,6 +2354,7 @@ header .btn {
     background-color: #fff;
     z-index: 999;
     font-size: .5rem;
+    margin-top: 5px;
   }
 
   .div2-2 {
