@@ -289,16 +289,25 @@ section .card .image {
   align-items: center;
 }
 
-.containers {
-  background-color: #fff;
-}
+/* .containers {
+  background-color: rgb(185, 10, 10);
+} */
 
 .containers .column {
-  background-color: #fff;
+  width: auto;
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: 2rem;
   grid-template-rows: repeat(2, 15rem);
   grid-template-columns: repeat(4, 24rem);
+}
+.containers .column{
+  width: 15px;
+  
+}
+.containers .card{
+  padding: 15px;
+  margin: 5px;
+  width: fit-content;
 }
 
 .card:hover {
@@ -434,6 +443,9 @@ h3 {
 .contactsec a {
   color: #fff !important;
   text-decoration: underline;
+}
+.contactsec p{
+  color: #fff;
 }
 
 .rows:after {
@@ -1787,6 +1799,10 @@ header .btn {
     height: auto;
     
   }
+
+.div4{
+  margin-top: -15px;
+}
 .topnav a{
   color: #fff;
 }
@@ -1797,15 +1813,21 @@ header .btn {
   color: green;
 }
 
-
-.topnav i{
-  background-color: red;
-  padding: 0;
-  box-sizing:border-box;
+.icon{
+  margin-top: -11px;
+ background-color: #00f !important;
+ color: white !important;
+ 
 }
-  
-  
-  
+
+.active {
+  margin-top: -5px;
+}
+
+p,h1,h3,h4,li{
+  color: #000;
+}
+ 
   .div33,#menusbtn {
     display: none;
   }
@@ -1817,6 +1839,11 @@ header .btn {
   .div333 {
     width: 50%;
     z-index: -99;
+  }
+
+  .div333 p, .div2-2 p,ol, .quoted p, .quoted h4{
+    font-size: .7rem;
+    line-height: .6cm;
   }
 
   .slideshow-container img {
@@ -1947,15 +1974,21 @@ header .btn {
     margin-left: -40px;
     display: grid;
     grid-gap: rem;
-    width: 1rem;
+    width: 100%;
 
-    grid-template-rows: repeat(1, rem);
-    grid-template-columns: repeat(2, rem);
+    grid-template-rows: repeat(1, 30rem);
+    grid-template-columns: repeat(2, 17rem);
 
   }
 
   .div5 {
     transform: scale(.6);
+  }
+  .containers .column .card{
+    
+    margin-left: 8px;
+    width: fit-content;
+    padding: 0px;
   }
 }
 
