@@ -32,48 +32,6 @@ body {
   display: none;
 }
 
-.sidenav {
-  height: 300px !important;
-
-  position: absolute;
-  z-index: 99;
-  padding: 0px;
-  top: 350px;
-  left: 0;
-  margin-left: -5px;
-  background-color: rgb(255, 136, 0);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #fff !important;
-  display: flexbox;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-  text-decoration: underline;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: -20px;
-  right: 2px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#menusbtn {
-  position: absolute;
-  right: 30px;
-}
-
 a {
   padding: 1px;
 }
@@ -91,6 +49,71 @@ body {
   font-size: 20px;
   color: #333;
 }
+
+.mobile-container {
+  display: none;
+  max-width: 100%;
+  margin: auto;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav  i .fas{
+  background-color: red;
+  background: fixed;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  
+}
+
+.topnav #myLinks{
+  
+  display: none;
+ 
+}
+#myLinks a{
+  padding: 1.5px;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  /* background-color: #04AA6D; */
+  color: white;
+}
+
+
+
+
+
+
+
+
+
 
 img {
   height: 200px;
@@ -858,8 +881,10 @@ header .btn {
 }
 
 #navbar a {
-  float: left;
-  display: block;
+  text-align: center;
+  float: none;
+  justify-content: center;
+  display: inline-block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -952,10 +977,7 @@ header .btn {
   height: 100%;
 }
 
-#mySidenav,
-#menusbtn {
-  display: none;
-}
+
 .div2 h2{
   background-color: #2946eb;
   color: #fff;
@@ -1760,13 +1782,36 @@ header .btn {
 }
 
 @media (max-width: 600px) {
-  .div33 {
+  .mobile-container{
+    display: block;
+    height: auto;
+    
+  }
+.topnav a{
+  color: #fff;
+}
+.topnav{
+  background-color: #00f;
+}
+#myLinks{
+  color: green;
+}
+
+
+.topnav i{
+  background-color: red;
+  padding: 0;
+  box-sizing:border-box;
+}
+  
+  
+  
+  .div33,#menusbtn {
     display: none;
   }
 
-  #navbar a {
-    font-size: 0.5rem;
-    transform: scale(.9);
+  #navbar{
+   display: none;
   }
 
   .div333 {

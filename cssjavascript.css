@@ -379,7 +379,7 @@ header .holder .company-logo{
   margin: 0;
 }
 
-#mySidenav, #menusbtn{
+#mySidenav, # {
   display: none;
 }
 
@@ -491,7 +491,7 @@ header .holder .company-logo{
             text-align: right;
             right: 10px;
           }
-         header span #menusbtn{
+         header span # {
              font-size: .2rem !important;
            
              right: -100px;
@@ -1041,7 +1041,7 @@ header  .bts{
         text-align: center;
       }
      
-       #menusbtn{
+       # {
         position: absolute;
         border-color: red;
        right: 0;
@@ -1270,7 +1270,7 @@ header .div4{
   
    }
 
-#menusbtn{
+# {
 
   position: absolute;
  right: 0px;

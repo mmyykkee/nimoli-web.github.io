@@ -14,6 +14,14 @@ $('.btns').click(function(){
     $(this).addClass("actives").siblings().removeClass("actives");
   });
 
+  function myFunctions() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
 
 const navbar = document.getElementById("navbar");
 const sticky = navbar.offsetTop;
@@ -29,7 +37,7 @@ var Swiper = new Swiper(".mySwiper", {
   spaceBetween: 2,
   centeredSlides: true,
   autoplay: {
-    delay: 500000,
+    delay: 500,
     disableOnInteraction: false,
   },
   pagination: {

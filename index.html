@@ -52,9 +52,7 @@
 
   </div>
 
-  <div class="btn">
-    <i class="fas fa-times close-btn"></i>
-  </div>
+  
   <div id="navbar">
 
     <a class="active" href="index.html">Home </a>
@@ -67,24 +65,28 @@
     <a href="About Us.html" target=""> About Us </a>
 
   </div>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">Home </a>
-    <a href="Our Partners.html" target=""> Our Partners </a>
-    <a href="Gallery.html" target="">Gallery</a> </a>
-    <a href="Careers.html" target=""> Careers </a>
-    <a href="Our Services.html" target=""> Our Services </a>
-    <a href="Branches.html" target=""> Branches </a>
-    <a href="courses.html" target=""> Courses </a>
-    <a href="About Us.html" target=""> About Us </a>
-  </div>
+  <div class="mobile-container">
+    <div class="topnav">
+        <a class="active" href="index.html">Home </a>
+      <div id="myLinks">
+        <a href="Our Partners.html" target=""> Our Partners </a>
+        <a href="Gallery.html" target="">Gallery</a> </a>
+        <a href="Careers.html" target=""> Careers </a>
+        <a href="Our Services.html" target=""> Our Services </a>
+        <a href="Branches.html" target=""> Branches </a>
+        <a href="courses.html" target=""> Courses </a>
+        <a href="About Us.html" target=""> About Us </a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunctions()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div style="padding-left:16px">
+    </div>
+    
 
 
-  <span style="font-size:30px;cursor:pointer;top:0;" onclick="openNav()" id="menusbtn">&#9776;</span>
-
-  <div class="btn">
-    <i class="fas fa-bars menu-btn" onclick="togglemenu()"></i>
-  </div>
+   
 </header>
 
 <body onscroll="myFunction()">
@@ -408,6 +410,7 @@
       Facebook</a>
 
   </div>
+</div>
 
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
