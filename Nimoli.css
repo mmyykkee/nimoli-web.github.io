@@ -108,7 +108,9 @@ body {
 
 
 
-
+hr{
+  position: relative;
+}
 
 
 
@@ -998,6 +1000,86 @@ header .btn {
 .div2,ol{
   line-height: 1.2rem;
 }
+
+@media (max-width: 2000px) {
+  
+  .mySwiper {
+    width: 10%;
+    margin-left: -50px;
+   
+    position: relative;
+  }
+
+  .swiper-slide {
+    max-width: fit-content;
+    height: 50px;
+  
+  }
+
+  .mySwiper img {
+    width: 100%;
+    height: 100%;
+    top: -70px;
+    object-fit: contain;
+    position: relative;
+
+    
+  }
+
+  .card-content .image1 {
+    margin-top: 50px;
+    padding: auto;
+    margin-left: auto;
+  }
+
+  .card-content .image2 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 150px;
+  }
+
+  .card-content .image3 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 150px;
+  }
+
+  .card-content .image4 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 150px;
+  }
+
+  .card-content .image5 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 150px;
+  }
+
+  .card-content .image6 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 150px;
+  }
+
+  .card-content .image7 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 150px;
+  }
+
+  .card-content .image8 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 150px;
+  }
+
+  .card-content .image9 {
+    margin-top: 40px;
+    padding: auto;
+    margin-left: 150px;
+  }
+  }
 
 @media (max-width: 1600px) {
   
